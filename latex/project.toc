@@ -4,26 +4,26 @@
 \contentsline {chapter}{\numberline {2}Introduction and Context}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}General Problem Statement}{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Previous work}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Purpose}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}Scope}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}Roadmap}{7}{section.2.5}
-\contentsline {chapter}{\numberline {3}Methodology}{8}{chapter.3}
-\contentsline {chapter}{\numberline {4}Technology Review}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Prototyping Tool - Justin-mind}{10}{section.4.1}
-\contentsline {section}{\numberline {4.2}MEAN-Stack}{10}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}NoSql Technology - MongoDB}{10}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Express.js}{10}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Node.js}{10}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}AngularJs}{10}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}REST- Architecture}{10}{section.4.3}
-\contentsline {section}{\numberline {4.4}JWT - JSON Web Tokens Authentication}{10}{section.4.4}
-\contentsline {section}{\numberline {4.5}Send-grid - Email Delivery}{10}{section.4.5}
-\contentsline {section}{\numberline {4.6}Cross-Platform Development}{10}{section.4.6}
-\contentsline {section}{\numberline {4.7}Google Maps}{10}{section.4.7}
-\contentsline {chapter}{\numberline {5}System Design}{12}{chapter.5}
-\contentsline {section}{\numberline {5.1}Architecture}{12}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Presentation Layer}{12}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Business Logic }{12}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Data Layer}{12}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}System Evaluation}{13}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{14}{chapter.7}
+\contentsline {section}{\numberline {2.3}Purpose}{8}{section.2.3}
+\contentsline {section}{\numberline {2.4}Scope Objective and Goals}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}Roadmap}{9}{section.2.5}
+\contentsline {chapter}{\numberline {3}Methodology}{10}{chapter.3}
+\contentsline {chapter}{\numberline {4}Technology Review}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Prototyping Tool - Justin-mind}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}MEAN-Stack}{12}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}NoSql Technology - MongoDB}{12}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Express.js}{12}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Node.js}{12}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}AngularJs}{12}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}REST- Architecture}{12}{section.4.3}
+\contentsline {section}{\numberline {4.4}JWT - JSON Web Tokens Authentication}{12}{section.4.4}
+\contentsline {section}{\numberline {4.5}Send-grid - Email Delivery}{12}{section.4.5}
+\contentsline {section}{\numberline {4.6}Cross-Platform Development}{12}{section.4.6}
+\contentsline {section}{\numberline {4.7}Google Maps}{12}{section.4.7}
+\contentsline {chapter}{\numberline {5}System Design}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}Architecture}{14}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Presentation Layer}{14}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Business Logic }{14}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Data Layer}{14}{subsection.5.1.3}
+\contentsline {chapter}{\numberline {6}System Evaluation}{15}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{16}{chapter.7}

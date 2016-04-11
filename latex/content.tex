@@ -12,6 +12,7 @@ Explain here who the authors are.
  The 14 tribes relished their independence but retained their close links to the British crown. Galway's strategic coastal location and natural harbour area resulted in a successful trade with both Portugal and Spain and the city prospered for centuries. However in 1651 with the arrival of Cromwell the region entered a long period of decline. Other prominent sea ports emerged on the east coast, namely Dublin and Waterford and trade with Spain came almost at an end. Many years would pass before Galway would again enjoy such prosperity but the legacy of the cities long and colourful history is evident in the character and style of the city. 
  Galway City is a thriving, bohemian, cultural city on the western coast of Ireland. Along with being a popular seaside destination with beautiful beaches and long winding promenade, it also has a buzzing cosmopolitan city centre. The city is a joy to explore with its labyrinthine cobbled streets, colourful shop facades and busy café/ bar culture.  The city is also well known for its many festivals throughout the year with huge crowds gathering for the annual Galway Arts Festival, Races and numerous other events. Old Ireland is present too with turf fires and traditional music featuring in many pubs to compliment your enjoyment of a well-earned pint of Guinness. Take an evening stroll along the promenade and watch the sunset over Galway Bay or watch the salmon fishermen in the River Corrib from the perfect vantage point of the Salmon Weir Bridge.
 \cite{galway20} Galway is certainly one of the best tourist attraction in europe because of its rich cultures, traditions, festivals. Galway  and is bidding to become the European Capital of Culture in 2020.The bid represents an opportunity for everyone to join their hands together as a community and reflect and spread the uniqueness of our Galway culture and the richness, vitality and diversity of our shared European culture. \cite{failteireland}Failte Ireland has provided the regional tourism performance of 2014.  The overseas visitor to counties in 2014 shows that, there were total of 1235 people visiting Galway, and ranks 3rd in Ireland after Dublin (4,119) and Cork (1,542). Failte Ireland  has also provided the result of Overseas visitor revenue  (€mn) by county in 2014.  Adapted from : 
+
 	INSERT IMAGE HERE
 
 
@@ -21,10 +22,45 @@ In partnership with the Department of Social Protection, Galway City Council and
 
 \chapter{Introduction and Context}
 	\section {General Problem Statement}
+	Galway Civic Trust is an organisation arranging tours around Galway City. They came to us with an issue with which they have been struggling for a while. Any change or addition to their touring program necessitated creating new application or at least updating the existing one. This was impractical as it required Galway Civic Trust to stay in constant touch with GMIT. We have been therefore tasked to develop a cross platform mobile application for the Galway Civic Trust by integrating the backend for content management. The mobile application will be used by the consumer and all the data (tours) will be pulled dynamically from the API. Admin (Galway Civic Trust) can add new tours from the admin panel and all the tours will be synchronised across the consuming devices via Application Programming Interface. The goal of this project is to allow instance synchronisation between the API and the consuming devices so consumer can receive the changes in real time.
+	Developing such an application would certainly solve the issue of Galway Civic Trust. Proposed application will eliminate time consuming visits to GMIT and allow GCT to easily and efficiently make any changes to existing or new tours in the cross platform mobile application through the admin panel.
+	
 	\section {Previous work}
+	There were multiple apps developed for Galway civic trust for every new tour. All the content used in the app was static contents therefore It made it impossible to update existing tours or add more tour as needed in the feature.
+	
 	\section {Purpose}
-	\section {Scope}
+	The whole purpose of this application is to facilitate Galway Civic Trust to CRUD tours or any locations of interests via admin portal. System admin is able to manage the content and this will be reflected in the mobile app.  The end user will be able to use their mobile phone to have a look at different places of interests in Galway.  The hybrid mobile app will provide end user information regarding the tours. Mobile app can be very useful to tourist travelling to Galway.
+	
+	\section {Scope Objective and Goals}
+	The project is separated into three different independent parts.
+	1: Backed (Admin Panel): Allows system user to perform Create / Read / Update / Delete operation using graphical and interactive user interface. Different roles has been added assign admins, example Super Admin have permission to manage other admin accounts whereas regular admin don’t.
+	2: RESTful API: Allows mobile devices to consume the JSON data. Changes made in the database is reflected by an API and consuming devices automatically receive the changes in real-time.
+	3: Ionic Mobile App: Cross platform hybrid mobile app has been developed using Ionic framework.  App communicates with the API and pull the data.
+	
+	 Objective and Goals: Our objective and goals comes from the previous which work which was carried out by the past Software Development Students of GMIT. Our main objective and goals is to solve the problem stated in the problem statement. Our main goals and objective of this project are as follows:
+	 \begin{itemize}
+		 \item Develop Backend for content management.
+		\item Develop Restful API so that the client app can consume data in real time. 
+		\item Cross platform hybrid mobile app for consuming the API.
+		\item Google Maps navigation and direction services.
+		\item Instant synchronization of data  between API consuming devices and backend. 
+	\end{itemize}
 	\section {Roadmap}
+	So, at this point, we have discussed about what the project is, and the reason for taking this project. Now, let me explain few sections/chapters of this review briefly so you will have a better understanding of a project.
+	Methodology  - This section provides the development methodologies we used to develop this project, including project meetings, collaboration tools used, interaction with the client and weekly meeting with the project supervisor. 
+	Technology review : This section provides the research that was carried out when choosing the technology . This section also provides the selection criteria and the particular reason for choosing the specific technology.
+	System Design : This section gives detailed information about actual system, and the way it is functioning. This section also talks about the architecture of a project, Data models, use cases etc.  
+	System Evaluation : This section provides evaluates the system based on the following attributes.
+	Scalability
+	Efficiency
+	Robustness
+	Maintainability
+	Extensibility 
+	Reliability 
+	
+	Conclusion and Recommendation: This section summarises the context of a project, objectives and goal achieved. 
+	We have talked about different sections of this project briefly and now I would like  to include the resources url of this project.  Due to the nature of this project, we have created three different repositories in Github as because they were developed independently of one another and at the end they are talking using the middleware technologies and different protocols. This is explained in detail in the technology review section.  Following are the repositories in the github.
+	
 
 		
 The introduction should be about three to five pages long.
