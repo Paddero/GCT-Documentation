@@ -13,10 +13,16 @@ Explain here who the authors are.
  Galway City is a thriving, bohemian, cultural city on the western coast of Ireland. Along with being a popular seaside destination with beautiful beaches and long winding promenade, it also has a buzzing cosmopolitan city centre. The city is a joy to explore with its labyrinthine cobbled streets, colourful shop facades and busy café/ bar culture.  The city is also well known for its many festivals throughout the year with huge crowds gathering for the annual Galway Arts Festival, Races and numerous other events. Old Ireland is present too with turf fires and traditional music featuring in many pubs to compliment your enjoyment of a well-earned pint of Guinness. Take an evening stroll along the promenade and watch the sunset over Galway Bay or watch the salmon fishermen in the River Corrib from the perfect vantage point of the Salmon Weir Bridge.
 \cite{galway20} Galway is certainly one of the best tourist attraction in europe because of its rich cultures, traditions, festivals. Galway  and is bidding to become the European Capital of Culture in 2020.The bid represents an opportunity for everyone to join their hands together as a community and reflect and spread the uniqueness of our Galway culture and the richness, vitality and diversity of our shared European culture. \cite{failteireland}Failte Ireland has provided the regional tourism performance of 2014.  The overseas visitor to counties in 2014 shows that, there were total of 1235 people visiting Galway, and ranks 3rd in Ireland after Dublin (4,119) and Cork (1,542). Failte Ireland  has also provided the result of Overseas visitor revenue  (€mn) by county in 2014.  Adapted from : 
 
-	INSERT IMAGE HERE
+\begin{center}    
+	\includegraphics{img/statsgalway.PNG}
+\end{center}
+\begin{center}    
+	\includegraphics{img/revenue.PNG}
+\end{center}
 
 
-About Galway Civic Trust:  \cite{galway20}Dúchas na Gaillimhe - Galway Civic Trust is committed to protecting and enhancing Galway's natural, built and cultural heritage for the benefit of all. The Trust adopts a hands-on approach and undertakes improvement projects which otherwise would not happen. Our offices are located in the Latin Quarter at the Red Earl's Hall archaeological site.
+
+About Galway Civic Trust:  \cite{galwaycivictrust}Dúchas na Gaillimhe - Galway Civic Trust is committed to protecting and enhancing Galway's natural, built and cultural heritage for the benefit of all. The Trust adopts a hands-on approach and undertakes improvement projects which otherwise would not happen. Our offices are located in the Latin Quarter at the Red Earl's Hall archaeological site.
 Established in 1992, we have completed over 50 projects, ranging from the erection of historic wall plaques to the refurbishment of Rusheen Bay Bird Sanctuary and restoration of the Fishery Tower at Wolfe Tone Bridge.
 In partnership with the Department of Social Protection, Galway City Council and Galway County Council, Galway Chamber of Commerce and Industry, The Heritage Council of Ireland, and the local community, we undertake works for the enhancement of Galway city and county.
 
@@ -61,10 +67,6 @@ In partnership with the Department of Social Protection, Galway City Council and
 	Conclusion and Recommendation: This section summarises the context of a project, objectives and goal achieved. 
 	We have talked about different sections of this project briefly and now I would like  to include the resources url of this project.  Due to the nature of this project, we have created three different repositories in Github as because they were developed independently of one another and at the end they are talking using the middleware technologies and different protocols. This is explained in detail in the technology review section.  Following are the repositories in the github.
 	
-
-		
-The introduction should be about three to five pages long.
-Make sure you use references~\cite{einstein}
 
 \chapter{Methodology}
 About one to two pages.
@@ -128,17 +130,94 @@ Check out the nice graphs in Figure \ref{tikz:graphs}, and the nice diagram in F
 
 
 \chapter{Technology Review}
+	In this section we are going to talk about the technology used in this project.  We have used various types of new technologies. This sections will cover about the technology choices and the reason for choosing the technologies. We have used MEAN stack for backend development, Ionic Framework for cross platform app development and JustInMind as a prototyping tool.  We are first going to talk about prototyping tool then MEAN stack and finally we will look at the ionic framework and cross platform development. 
+
 	\section{Prototyping Tool - Justin-mind}
+	 JustInMind  in All-In-One prototyping tool for web and mobile app. \cite{JustInMind} It allows you to to provide prototype faster and better with default built-in widgets. These widgets have been specifically designed to fit our IOS or Android app, so you content always looks great.  JustInMind also provide the web framework to prototype web applications. Every widget in web framework is designed to help your web wireframes. JustInMind includes handy collection of web buttons, menus, charts  and more that can be used automatically.  JustInMind also gives us an ability to embed HTML and Documents. The widget library allows you to insert HTML, Docs and video, including online widgets, interactive maps and other on/offline content, to name a few. 
+	 
 	\section{MEAN-Stack}
+	So, what exactly is MEAN stack ?Well, in nutshell \cite{Mean-Stack} MEAN is a free and open-source JavaScript software stack for building dynamic web sites and web applications. The MEAN stack makes use of MongoDB, Express.js , Angular.js and Node.js. Because all components of MEAN stack support programs written in JavaScript, MEAN applications can be written in one language for both server-side and  client-side execution environments. In order to fully understand the use and why MEAN stack is so popular and one of the mostly used javascript software stack, we must talk about its components. Let's start with M (MongoDB) of MEAN stack.
+	
 		\subsection{NoSql Technology - MongoDB}
+		MEAN stack comes with a NoSql database technology called MongoDB. Before talking about MongoDB itself it is important that we understand what NoSql technology is about. \cite{NoSqlTechnology}  Not only Sequential Query Language(NoSql) is a database that provides a mechanism for storage and retrieval of data which is modeled in means other than the tabular relations used in relational databases. NoSql databases have been proven to be the solution to what is known as Big Data as they follow a schema-less data model, hence provide increased scalability and flexibility as compared to relational databases. In recent years, developers and organization have experiences a sharp rise in volume of user data and products that has to be stored in databases \cite{MongoOfficial}. NoSQL databases are widely used to store and retrieve very large amounts of data using a key-value format \cite{VeronikaAbramova}. These types of databases have emerged as the best choices that suite modern mobile and web development.
+		We discussed briefly about the NoSql database technology. Now let's briefly talk about MongoDB .
+		
+		MongoDB : This is a document store, non-relational, open-source database developed by 10gen. The name mongo is extracted from the word humongous. It provides high availability , high performance, and automatic scaling and allows data insertion without a predefined schema. A record in MongoDb is composed of field and value pairs and are predefined schema. A record in MongoDb is composed of field and value pairs and are similar to JSON objects. The value of field may consists of arrays, and array of documents or other documents. MongoDb maintains data consistency in the sense that one write operation to the data in the database allow subsequent read operation. They use a locking mechanism that contributes to increased execution time as the number of update operation increases. \cite{MongoOfficial} \cite{EricRedmond}.
+		
+		
+		Anam Zahid , Rahat Masood , Muhammad Awais Shibli, in their paper describe how MongoDb  offers horizontal scale-out  for databases using a technique called sharding. With sharding, a data is distributed across multiple physical partitions known as shards. This was designed in order to address the hardware limitations where only a single server existed and contributed to such things as bottlenecks in RAM or disk I/O. MongoDB has the sharding functionality automatically built into the databases and the size of the data grows, MongoDb automatically balances the data in the shard and so when the size of cluster decreases or increases. As a result , a dynamically balanced load is experienced. Concurrency control measure for multiple clients accessing the same database are enforced by mongoDB by managing multi-threaded access to shared objects and data structures. \cite{MongoOfficial} \cite{MongoDbArchitectureGuide}.
+		
+		
+		
 		\subsection{Express.js}
+		\cite{expressRef}Express.js is another component of MEAN Stack. Express is a nodejs based web framework, inspired by Sinatra and it is asynchronous. Express.js builds on the underlying capability of Node, by providing a web application server framework. Express.js is a Node.js web application server framework, designed for building single-page, multi page and cross platform hybrid web applications\cite{expressRefWiki}. 
+		
 		\subsection{Node.js}
+		Node.js is a Javascript runtime built on Chrome’s V8 JavaScript Engine. Node.js uses an event driven, non-blocking I/O model that makes it lightweight and efficient web server environment, idea for constructing a web-service API’s\cite{Node.jsWiki}. Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world. \cite{expressRefWiki} 
+		
 		\subsection{AngularJs}
+		The last component of a stack is Angularjs. The official documentation \cite{Angularjs}defines angularjs as - AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. Angular's data binding and dependency injection eliminate much of the code you currently have to write. And it all happens within the browser, making it an ideal partner with any server technology.
+		
+		Angularjs provides client-side framework for MVC  \cite{Angularjs} single page web application. To take full benefit of Angular, it can be well be used with other software packages like Yeoman and Bootstrap. Yomean provides an environment which enables the use of generators: simple script-based tools that can be used to scaffold the bare-boles of  Angular web app. \cite{YeomanGenerator}.  There are several reason why angularjs is so popular and few reasons includes: 
+		
+		1: As mentioned above, Angularjs structure the source code by following the Model View Controller. 
+		2: Another power feature of Angularjs is the capability of two way data binding. It lessens the amount of boilerplate code which is written to keep the model and view in agreement.
+		3:  Angularjs models are plain old java object (POJO), therefore it is simple to change or append properties without any complications.
+		4 : Another most important feature of Angularjs js is about dependency injection. Dependency injection is a software design pattern that deals with how components get hold of their dependencies. The angular injector subsystem is in the charge of creating components  resolving their dependencies, and providing them to other components as requested \cite{AngularJSDi}. 
+		So, we spoke about the main components of MEAN stack briefly and  now you should have better understanding  of this technology.  Lets us now talk about the RESTful api that as been developed for the consumption of our data by the mobile device(end user).
+		
 		\section{REST- Architecture}
-		\section{JWT - JSON Web Tokens Authentication}
+		\cite{expressRefWiki}\cite{restProgramming} Representation State Transfer, widely knows as the REST or RESTful model for web-services, uses the native HTTP operation: POST,GET,PUT, and DELETE to map on to the four fundamental database operations. - Create,READ,UPDATE,DELETE. API can be built to link these four HTTP verbs to functions which Create, Read, Delete or Update records within a web-services. This service can be consumed by any time of authenticated client device. 
+		
+		\section{Passport JWT - JSON Web Tokens Authentication}
+		The backend(admin portal) and the API is fully protected using JSON web tokens. System user Login and API endpoints has been all protected from external injection.  \cite{AnatomyOfJWT} \cite{IETFRFC} \cite{DraftIETAOAUTH} [19,20,21] JSON web tokens are open, industry standard RFC 7519 method for representing claims securely between two parties.  Token based authentication is prominent everywhere on the web nowadays. With most every web company using an API, tokens are the best way to handle authentication for multiple user. JWT is separated into three parts, Header, Payload,  Signature.
+		
+		 Header: The header contains two parts - declaring the type, which is jwt and the hashing algorithm to use (HMAC SHA256 )
+		 {
+		 	“Typ”: ”JWT”
+		 	“Alg”: ”HS256”
+		 }
+		 2: Claims :  The payload will carry the bulk of our JWT, also called the JWT claims\cite{AnatomyOfJWT}. This is where we put the information that we want to transmit and other information about our token. The claims contains any information that you want signed\cite{StormpathJWT}.
+		 3: JSON web Signature: The headers are claims digitally signed using the algorithms in the specified in the header.  The header and claims are JSON that are base64 encoded for transport. The header, claims, and signature are appended together with a period character \cite{IETFRFC}
+		 \cite{DraftIETAOAUTH}. \textbf{The JWT authencation is handelled using passport module that is available from npm. This module lets you authenticate endpoints using a JSON web token. It is intended to be used to secure RESTful endpoints without sessions.}
+		 
+		 Here is  an example configuration which reads the JWT from the http Authorization header with the scheme 'JWT' \cite{JWTPassport}:
+		 
+\begin{minted}{js}
+	 var JwtStrategy = require('passport-jwt').Strategy,
+	 ExtractJwt = require('passport-jwt').ExtractJwt;
+	 var opts = {}
+	 opts.jwtFromRequest = ExtractJwt.fromAuthHeader();
+	 opts.secretOrKey = 'secret';
+	 opts.issuer = "accounts.examplesoft.com";
+	 opts.audience = "yoursite.net";
+	 passport.use(new JwtStrategy(opts, function(jwt_payload, done) {
+	 User.findOne({id: jwt_payload.sub}, function(err, user) {
+		 
+	 if (err) {
+	 return done(err, false);
+	 }
+	 if (user) {
+	 done(null, user);
+	 } else {
+	 done(null, false);
+	 // or you could create a new account 
+			}
+	});
+	}));
+		 
+\end{minted}
+		 
+		
 		\section{Send-grid - Email Delivery}
+		 The  process of sending email to system admin with instructions to reset the password has been achieved using SendGrid API. SendGrid provides a cloud-based email delivery service that assists business with transactional email management \cite{sendGrid}. SendGrid is chosen in this project for password recovery email delivery service because it is very reliable and have advanced spam filtering system. We got sendgrid for absolute no cost for development purpose. 
+		 
 		\section{Cross-Platform Development}
+		End user mobile app has been developed in Ionic Framework.  The requirement of this project was to target at least two major platform, Android and IOS. Ionic framework was was a perfect choice for us because It is free and open source, Ionic offers a library of mobile-optimised HTML, CSS, and JS CSS components, gestures, tools for building highly interactive apps. Built with Sass and optimised for AngularJs \cite{expressRef}.
+		
 		\section{Google Maps}
+		For GPS navigation and directions of a tour in consumer (ionic app), google Direction service is used. It allows you to calculate directions by using the DirectionsService Object. Adapted from \cite{GoogleMapDirection}, the official documentation .This object communicates with the Google Maps API Directions Service which receives direction requests and return computed results. You may either handle these directions results yourself or use the DirectionsRenderer object to render these results. 
+		
 	
 About seven to ten pages.
 \begin{itemize}
@@ -149,10 +228,239 @@ About seven to ten pages.
 
 \chapter{System Design}
 As many pages as needed.
+	\section {System prototype}
+	Prototyping tools used : Reasonable amount of time was spent initially in the design phase of this application . We have designed our both backend (Admin portal ) and Ionic mobile app using , one of the most popular prototyping software called JustInMind Prototyper. 
+	
 	\section{Architecture}
+	Architecture : The application is separated into three layers.  Presentation layer, Business logic layer and Data access layer.
+	\begin{center}    
+		\includegraphics{img/architecture.PNG}
+	\end{center}
 		\subsection{Presentation Layer}
+		 In presentation layer you can see the Admin Site (Admin portal) ,this is a graphical user interface where system admin can manage the contents and accounts of the users registered.  On the right hand side, you can see many mobile devices of different platform consuming the data from API. Consuming app is only allowed to send GET request to API because all we care in end user app is being able to retrieve the data dynamically loaded from the api. On the admin portal, any CRUD operations needed to perform requires authorization and authentication of registered admin. The user interface in presentation layer was developed in angularjs and Ionic framework. The main components of presentation layer are as follows : In this layer will will discuss about the admin portal user interface and end user mobile apps user interface. 
+		
+		 	\begin {center}    
+		 		\includegraphics{img/gctloginpage.PNG}
+		 	\end{center}
+		 	Login screen for system admin. If admin forgot his password, it can easily be reset using forgot password link . The system will check and verify that the specified admin exist in the database and it exists, system will generate a random temporary password and send and email. 
+		 	
+		 		\begin{center}    
+		 			\includegraphics{img/MainPage.PNG}
+		 		\end{center}
+		 		This is the landing page of admin panel. When admin logs into the website successfully they will then be brought to this main page where they can see all the tours they have published. The tour also represent its state, ie. published or Not yet published. Admin can easily from CRUD operations. 
+		 		
+		 		LOCATION page
+		 		\begin{center}    
+		 			\includegraphics{img/locationPage.PNG}
+		 		\end{center}
+		 		When you click on the tour in the main page, you will be brought to this (location page) where you can see all the locations/walks within that tour.System admin can perform CRUD operations. 
+		 		 	USER MANAGEMENT PAGE
+		 			\begin{center}    
+		 				\includegraphics{img/userManagement.PNG}
+		 			\end{center}
+		 		
+		 			This is one of the powerful feature of this project. This is a user management section.  Remember, there are two types of admin roles in this project. Super admin and Regular admin. If you are logged in as a superuser then you will have access to user management, system user registration pages.
+		 			
+		 			\begin{center}    
+		 				\includegraphics{img/ionicmanepage.PNG}
+		 			\end{center}
+		 			This is the landing page of the mobile application. The application is very clean and attractive. It shows the weather and on the bottom it have different tabs for navigation purpose. 
+		 			
+		 				\begin{center}    
+		 					\includegraphics{img/toursandlocations.PNG}
+		 				\end{center}
+		 				When user clicks on the tours, they will be brought to the page on the left. End user can see all the tours available. When they click on a tour, they will be brought to the location page where it displays all the location or walks in that tour. 
 		\subsection{Business Logic }
+		We have talked about the presentation layer of this application . Now let's talk about the business logic layer and how everything is connected.  The business logic has been written in javascript. Every functionality has its own controller.  When consumer app send the GET request to an API endpoint, appropriate controller is called to complete the request. The thing to remember here is, external user / external request is not directly connected to our database. The controller is used to retrieve the information from the database and response is sent back to the browser. There is no direct connection to the database therefore any request coming is handled by an API and controllers working together.  Please refer to the architecture diagram above for better understanding of this process. 
+		API route and appropriate controller is invoked to complete the request. 
+		
+		How tour is uploaded in the database ?
+		1: Angularjs Controller
+		2: Send post request to backend API
+		3 : API  now insert data in mongodb..
+		
+		
+		1: AngularJs upload tour controller :
+		
+\begin{minted}{js}
+	 $scope.uploadTour = function(file) {
+	 console.log($scope.tour);
+	 Upload.upload({
+	 url: '/api/tour/upload',
+	 headers: {
+	 'Content-Type': 'multipart/form-data'
+	 },
+	 data: {
+	 file: file,
+	 title: $scope.tour.title,
+	 description: $scope.tour.description,
+	 status:$scope.tour.status,
+	 _creator: $scope.user._id
+	 }
+	 }).then(function(resp) {
+	 alertSuccess.show();
+	 console.log('success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
+	 $scope.tours.splice(0, 0, resp.data);
+	 $scope.tour.title = '';
+	 $scope.picFile = '';
+	 $scope.picPreview = false;
+	 alertSuccess.show();
+	 
+	 }, function(resp) {
+	 
+	 alertFail.show();
+	 }, function(evt) {
+	 var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+	 console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
+	 });
+	 
+	 }//uploadtours
+	 toursAPI.getAllTours();
+	 }
+\end{minted}
+		
+		
+		
+		
+		
+	   \begin{minted}{js}
+ exports.upload = function(req, res) {
+	 var newTour = new Tour();
+	 var fileimage = req.middlewareStorage.fileimage;
+	 
+	 console.log("The description is :"+ req.body.description);
+	 newTour.image = '/assets/images/uploads/' + fileimage;
+	 newTour.title = req.body.title;
+	 newTour.description = req.body.description;
+	 newTour.status = req.body.status;
+	 newTour.createTime = Date.now();
+	 
+	 newTour.save(function(err, tour) {
+	 if(err) {
+		 console.log('error saving tour');
+		 return res.send(500);
+	 } else {
+		 console.log(tour);
+		 res.status(200)
+		 .send(tour);
+		 }
+	 });
+ };
+	   \end{minted}
+ POST and PUT routes protected
+ 
+ \begin{minted}{js}
+ router.post('/upload', auth.isAuthenticated(), controller.upload);
+ router.post('/updateTour', auth.isAuthenticated(), controller.updateTour);
+ router.post('/updateCurrentLocation', auth.isAuthenticated(), 
+ router.post('/uploadLocation', auth.isAuthenticated()
+ \end{minted}
+	
+Controller to receive all the locations of a specific tour and sorting by timestamp to determine the order of the tour inserted
+
+\begin{minted}{js}
+	exports.getAllPublishedTours = function(req, res) {
+		Tour.find({status:true})
+		.sort({
+		createTime: -1
+		})
+		.exec(function(err, tours) {
+		if (err) {
+		return handleError(res, err);
+		}
+		if (!tours) {
+			return res.send(404);
+		}
+		console.log(tours);
+		return res.status(200)
+		.json(tours);
+		});
+	};
+\end{minted}
 		\subsection{Data Layer}
+			Mongoose Models - MongoDB
+		\begin {center}    
+		\includegraphics{img/dataModels.PNG}
+		\end{center}
+		The back-end comprises of 3 collections. Locations , Tour and Admin collection. The model is represented as a mongoose model. Details about Mongoose is mentioned in the technology review section. talk about the each of  field in the collections and about their purpose. 
+		
+		\textbf	{Location:} - Lets us talk about the important field in the location collection. Location ID : is a unique ID assigned by MongoDb, TourID is an array that contains the ID of the tour. This is very important in this project because it is used to identify the location-tour relationship or in another words, to find out which tour the particular location belongs to. Data structure is Array because a location can be shared in one or many tours and we don't want to replicate the same data more than once. By having Tour ID array, we can keep track of the location and in how many tours it is being shared.
+		The Shared Counter is another field that determine, how many tours is currently using that location. This is useful when we want to share the location is multiple tour. 
+		
+		Location model representation in Mongoose:
+	\begin{minted}{js}
+	var mongoose = require('mongoose');
+	var Schema = mongoose.Schema;
+	
+	var LocationSchema = new Schema({
+	image: String,
+	title: String,
+	tourId : String,
+	tourIdArr : [String],
+	sharedCounter:Number,
+	description: String,
+	location: String,
+	xCoordinate: String,
+	yCoordinate: String,
+	_creator: {
+	type: Schema.ObjectId,
+	ref: 'User'
+	},
+	createTime: {
+	type: Date,
+	'default': Date.now
+	}
+	});
+	
+	module.exports = mongoose.model('LocationSchema', LocationSchema);
+		
+	\end{minted}
+		
+		\textbf	{Tour:} - Tour collections contains basic information about a tour.  Title represent a tour title, status identifies if  the tour is currently published or still under the development. Only with the status "published" tours are synchronised to the consuming devices. 
+		
+		Tour model in mongoose
+		\begin{minted}{js}
+	var mongoose = require('mongoose');
+	var Schema = mongoose.Schema;
+	
+	var TourSchema = new Schema({
+	image: String,
+	title: String,
+	description:String,
+	status: Boolean,'default':false,
+	createTime: {
+	type: Date,
+	'default': Date.now
+	}
+	});
+	
+	module.exports = mongoose.model('Tour', TourSchema);
+	\end{minted}
+	
+		
+		\textbf{Admin:} - This collection is the admin collection. This contains the details of system admins. The model of this collection in mongoose looks like this. 
+		
+	\begin{minted}{js}
+	var mongoose = require('mongoose');
+	var Schema = mongoose.Schema;
+	var crypto = require('crypto');
+	var UserSchema = new Schema({
+		name: String,  
+		email: {
+			type: String,
+			lowercase: true
+		},
+		role: {
+			type: String,
+			default: 'user'
+		},
+		hashedPassword: String, //hashed password
+		provider: String, //authencation provider
+		salt: String
+	});
+	\end{minted}
+		
+		
 \begin{itemize}
 	\item Architecture, UML etc. An overview of the different components of the system. Diagrams etc… Screen shots etc.
 \end{itemize}
