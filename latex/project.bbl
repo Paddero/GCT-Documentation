@@ -67,6 +67,9 @@
 \bibitem{StormpathJWT}
 ``Jwt - the right way.''
 
+\bibitem{HyphemeJWT}
+``Token based authencation - nodejs.''
+
 \bibitem{JWTPassport}
 ``Passport - jwt strategy.''
 

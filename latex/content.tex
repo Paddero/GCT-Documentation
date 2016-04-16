@@ -58,7 +58,6 @@ In partnership with the Department of Social Protection, Galway City Council and
 	System Design : This section gives detailed information about actual system, and the way it is functioning. This section also talks about the architecture of a project, Data models, use cases etc.  
 	System Evaluation : This section provides evaluates the system based on the following attributes.
 	Scalability
-	Efficiency
 	Robustness
 	Maintainability
 	Extensibility 
@@ -72,10 +71,11 @@ In partnership with the Department of Social Protection, Galway City Council and
 About one to two pages.
 Describe the way you went about your project:
 \begin{itemize}
-	\item Agile / incremental and iterative approach to development. Planning, meetings.
-	\item What about validation and testing? Junit or some other framework.
-	\item If team based, did you use GitHub during the development process.
-	\item Selection criteria for algorithms, languages, platforms and technolo-gies.
+	\item Agile / incremental and iterative approach to development. Planning, meetings. (2 para)
+	\item What about validation and testing? Junit or some other framework. 2(para)
+	\item If team based, did you use GitHub during the development process. (1 para)
+	
+	\item Selection criteria for MEAN stack and Ionic Framework. (10 lines)
 \end{itemize}
 Check out the nice graphs in Figure \ref{tikz:graphs}, and the nice diagram in Figure \ref{tikz:mydiagram}.
 
@@ -181,7 +181,10 @@ Check out the nice graphs in Figure \ref{tikz:graphs}, and the nice diagram in F
 		 3: JSON web Signature: The headers are claims digitally signed using the algorithms in the specified in the header.  The header and claims are JSON that are base64 encoded for transport. The header, claims, and signature are appended together with a period character \cite{IETFRFC}
 		 \cite{DraftIETAOAUTH}. \textbf{The JWT authencation is handelled using passport module that is available from npm. This module lets you authenticate endpoints using a JSON web token. It is intended to be used to secure RESTful endpoints without sessions.}
 		 
-		 Here is  an example configuration which reads the JWT from the http Authorization header with the scheme 'JWT' \cite{JWTPassport}:
+		 
+	\cite{HyphemeJWT} One great advantage of tokens is that we don't have to lookup the token in a database on every api call as it contains all needed information in itself. This should help keeping the authentication process small. The biggest downside of that is the inability of revoking a token without having a whitelist or blacklist somewhere. This is the reason we keep the lifetime of the token small (120 minutes in this example)
+		 
+ Here is  an example configuration which reads the JWT from the http Authorization header with the scheme 'JWT' \cite{JWTPassport}:
 		 
 \begin{minted}{js}
 	 var JwtStrategy = require('passport-jwt').Strategy,
@@ -207,7 +210,7 @@ Check out the nice graphs in Figure \ref{tikz:graphs}, and the nice diagram in F
 	}));
 		 
 \end{minted}
-		 
+
 		
 		\section{Send-grid - Email Delivery}
 		 The  process of sending email to system admin with instructions to reset the password has been achieved using SendGrid API. SendGrid provides a cloud-based email delivery service that assists business with transactional email management \cite{sendGrid}. SendGrid is chosen in this project for password recovery email delivery service because it is very reliable and have advanced spam filtering system. We got sendgrid for absolute no cost for development purpose. 
@@ -382,7 +385,7 @@ Controller to receive all the locations of a specific tour and sorting by timest
 		\begin {center}    
 		\includegraphics{img/dataModels.PNG}
 		\end{center}
-		The back-end comprises of 3 collections. Locations , Tour and Admin collection. The model is represented as a mongoose model. Details about Mongoose is mentioned in the technology review section. talk about the each of  field in the collections and about their purpose. 
+		The back-end comprises of 3 collections. Locations , Tour and Admin collection. The model is represented as a mongoose model. Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box. Lets talk about the each of  field in the collections (models) and about their purpose. 
 		
 		\textbf	{Location:} - Lets us talk about the important field in the location collection. Location ID : is a unique ID assigned by MongoDb, TourID is an array that contains the ID of the tour. This is very important in this project because it is used to identify the location-tour relationship or in another words, to find out which tour the particular location belongs to. Data structure is Array because a location can be shared in one or many tours and we don't want to replicate the same data more than once. By having Tour ID array, we can keep track of the location and in how many tours it is being shared.
 		The Shared Counter is another field that determine, how many tours is currently using that location. This is useful when we want to share the location is multiple tour. 
@@ -460,26 +463,34 @@ Controller to receive all the locations of a specific tour and sorting by timest
 	});
 	\end{minted}
 		
-		
-\begin{itemize}
-	\item Architecture, UML etc. An overview of the different components of the system. Diagrams etc… Screen shots etc.
-\end{itemize}
-
-\begin{table}[h]
-	\centering
-	\begin{tabular}{x{2cm}p{3cm}}
-		\toprule \\
-		Column 1 & Column 2 \\
-		\midrule \\
-		Rows 2.1 & Row 2.2 \\
-		\bottomrule
-	\end{tabular}
-	\caption{A table.}
-	\label{table:mytable}
-\end{table}
 
 \chapter{System Evaluation}
-As many pages as needed.
+
+	The problem we were trying to solve that is mentioned in the problem statement of introduction section is solved. Back-end is fully functional and tested using WebDriver java.We have successfully implemented what we initially wanted to do. Back-end (Admin Portal) is the hardest part of this application development, and the reason is, all the content management, authentications, and API creations is done in the back-end side of this system. The end user app built in ionic framework  is simply consuming the data from an API,and the synchronization is very quick and is working effectively. 
+	
+	In this section we are going to evaluate our system based on different attributes. They are as follows : 
+	\begin{itemize}
+	\item	Scalability
+	\item	Robustness
+	\item	Maintainability
+	\item	Extensibility 
+	\end{itemize}
+	
+    \textbf{Scalability: } :  The system is highly scalable when the requirement grows or the data in the database increases in the near future. MongoDb is used to store the datasets and it is widely used in the Industry. NoSql database technology and scalability issues is resolved easily. 
+    
+     \textbf{Robustness: } The system is very robust and works without any issues.
+     The system has been tested in Selenium Webdriver. Various test has been conducted to check the strength of the system. Test cases are available in the github project. The routes/endpoints in the backend are fully protected from any external injection, using the JWT - passport. 
+     
+     
+    \textbf{Maintainability} - This documentation provide clear understanding of the project. Future maintenance should not be a problem because it is very well structured. Model view Controller patterns was used throughout the development and everything is well structured in cohesive manner. The code is highly documented and it does't not impose future maintenance issues.
+    
+    \textbf{Extensibility} - The development of API makes it possible for many applications to consume the data. If Galway Civic Trust want to use the tour information in different project/system, they do not have to create or insert the same data in another application . The data can be easily shared using the API we built in this project for the consumption by mobile devices.
+    Lets say, if GCT want to add one more feature in the future, developer can easily insert a route code a controller to do that specific task. There is absolutely no need and will never have to mock around with other functionality to implement a new feature. No technical debt has to be paid back to add new functionality because the project was developed by adapting various software design principles and design patterns. 
+    
+    
+	\section{Testing}
+	Talk about selenium web-driver Java.
+	
 \begin{itemize}
 	\item Prove that your software is robust. How? Testing etc. 
 	\item Use performance benchmarks (space and time) if algorithmic.
