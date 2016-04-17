@@ -14,14 +14,16 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Node.js}{section.4.2}% 14
 \BOOKMARK [2][-]{subsection.4.2.4}{AngularJs}{section.4.2}% 15
 \BOOKMARK [1][-]{section.4.3}{REST- Architecture}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.4}{JWT - JSON Web Tokens Authentication}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.4}{Passport JWT - JSON Web Tokens Authentication}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.5}{Send-grid - Email Delivery}{chapter.4}% 18
 \BOOKMARK [1][-]{section.4.6}{Cross-Platform Development}{chapter.4}% 19
 \BOOKMARK [1][-]{section.4.7}{Google Maps}{chapter.4}% 20
 \BOOKMARK [0][-]{chapter.5}{System Design}{}% 21
-\BOOKMARK [1][-]{section.5.1}{Architecture}{chapter.5}% 22
-\BOOKMARK [2][-]{subsection.5.1.1}{Presentation Layer}{section.5.1}% 23
-\BOOKMARK [2][-]{subsection.5.1.2}{Business Logic }{section.5.1}% 24
-\BOOKMARK [2][-]{subsection.5.1.3}{Data Layer}{section.5.1}% 25
-\BOOKMARK [0][-]{chapter.6}{System Evaluation}{}% 26
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 27
+\BOOKMARK [1][-]{section.5.1}{System prototype}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.2}{Architecture}{chapter.5}% 23
+\BOOKMARK [2][-]{subsection.5.2.1}{Presentation Layer}{section.5.2}% 24
+\BOOKMARK [2][-]{subsection.5.2.2}{Business Logic }{section.5.2}% 25
+\BOOKMARK [2][-]{subsection.5.2.3}{Data Layer}{section.5.2}% 26
+\BOOKMARK [0][-]{chapter.6}{System Evaluation}{}% 27
+\BOOKMARK [1][-]{section.6.1}{Testing}{chapter.6}% 28
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 29

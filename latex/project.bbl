@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{galwayTourism}
 ``Galway tourism.''
@@ -9,9 +9,74 @@
 \bibitem{failteireland}
 ``failteireland.''
 
-\bibitem{einstein}
-A.~Einstein, ``{Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies],'' {\em Annalen der Physik}, vol.~322,
-  no.~10, pp.~891--921, 1905.
+\bibitem{galwaycivictrust}
+``Galway civic trust.''
+
+\bibitem{JustInMind}
+``Just in mind prototyper.''
+
+\bibitem{Mean-Stack}
+``Mean - stack.''
+
+\bibitem{NoSqlTechnology}
+``Nosql technology.''
+
+\bibitem{MongoOfficial}
+``Mongodb - manual.''
+
+\bibitem{VeronikaAbramova}
+``Open journal of databases (ojdb) volume 1, issue 2, 2014 which nosql
+  database.''
+
+\bibitem{EricRedmond}
+``Eric redmond jim r. wilson (2012); seven databases in seven weeks.''
+
+\bibitem{MongoDbArchitectureGuide}
+``Mongodb architecture guide..''
+
+\bibitem{expressRef}
+``Andrew john poulter, steven j.jonston, simon j.coxt.''
+
+\bibitem{expressRefWiki}
+``Express.js wiki.''
+
+\bibitem{Node.jsWiki}
+``Nodejs wiki.''
+
+\bibitem{Angularjs}
+``Angularjs - official website - introduction section.''
+
+\bibitem{YeomanGenerator}
+``Yeoman generator.''
+
+\bibitem{AngularJSDi}
+``Angularjs dependency injection - official website.''
+
+\bibitem{restProgramming}
+``Restful programming.''
+
+\bibitem{AnatomyOfJWT}
+``The anatomy of a json web token.''
+
+\bibitem{IETFRFC}
+``Internet engineering task force rfc 7519.''
+
+\bibitem{DraftIETAOAUTH}
+``Draft ieta oauth json web token.''
+
+\bibitem{StormpathJWT}
+``Jwt - the right way.''
+
+\bibitem{HyphemeJWT}
+``Token based authencation - nodejs.''
+
+\bibitem{JWTPassport}
+``Passport - jwt strategy.''
+
+\bibitem{sendGrid}
+``Send grid - email service.''
+
+\bibitem{GoogleMapDirection}
+``Direction service - google maps.''
 
 \end{thebibliography}
