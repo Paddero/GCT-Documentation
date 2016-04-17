@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  16 APR 2016 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  16 APR 2016 18:51
 entering extended mode
 **./project.tex
 (project.tex
@@ -1571,30 +1571,31 @@ Chapter 2.
 
 ] [9] [10]
 Chapter 3.
-
-LaTeX Warning: Reference `tikz:mydiagram' on page 11 undefined on input line 80
-.
-
 [11
 
-] [12]
+]
+
+LaTeX Warning: Reference `tikz:mydiagram' on page 12 undefined on input line 89
+.
+
+[12]
 Chapter 4.
 [13
 
 ]
-Overfull \hbox (2.18016pt too wide) in paragraph at lines 145--146
+Overfull \hbox (2.18016pt too wide) in paragraph at lines 154--155
 []\OT1/lmr/m/n/12 MongoDB : This is a doc-u-ment store, non-relational, open-so
 urce database
  []
 
 [14]
-Overfull \hbox (5.7705pt too wide) in paragraph at lines 156--157
+Overfull \hbox (5.7705pt too wide) in paragraph at lines 165--166
 \OT1/lmr/m/n/12 Node.js uses an event driven, non-blocking I/O model that makes
  it lightweight
  []
 
 [15]
-Overfull \hbox (7.47205pt too wide) in paragraph at lines 170--171
+Overfull \hbox (7.47205pt too wide) in paragraph at lines 179--180
 \OT1/lmr/m/n/12 ful model for web-services, uses the na-tive HTTP op-er-a-tion:
  POST,GET,PUT,
  []
@@ -1621,10 +1622,10 @@ Chapter 5.
 File: img/architecture.PNG Graphic file (type png)
 
 <use img/architecture.PNG>
-Package pdftex.def Info: img/architecture.PNG used on input line 240.
+Package pdftex.def Info: img/architecture.PNG used on input line 249.
 (pdftex.def)             Requested size: 452.43921pt x 323.70859pt.
 
-Overfull \hbox (62.43921pt too wide) in paragraph at lines 240--241
+Overfull \hbox (62.43921pt too wide) in paragraph at lines 249--250
  [] 
  []
 
@@ -1634,16 +1635,16 @@ Overfull \hbox (62.43921pt too wide) in paragraph at lines 240--241
 File: img/gctloginpage.PNG Graphic file (type png)
 
 <use img/gctloginpage.PNG>
-Package pdftex.def Info: img/gctloginpage.PNG used on input line 246.
+Package pdftex.def Info: img/gctloginpage.PNG used on input line 255.
 (pdftex.def)             Requested size: 341.77603pt x 248.42752pt.
  [20 <./img/architecture.PNG>]
 <img/MainPage.PNG, id=346, 532.99126pt x 240.9pt>
 File: img/MainPage.PNG Graphic file (type png)
  <use img/MainPage.PNG>
-Package pdftex.def Info: img/MainPage.PNG used on input line 251.
+Package pdftex.def Info: img/MainPage.PNG used on input line 260.
 (pdftex.def)             Requested size: 532.98996pt x 240.8994pt.
 
-Overfull \hbox (142.98996pt too wide) in paragraph at lines 251--252
+Overfull \hbox (142.98996pt too wide) in paragraph at lines 260--261
  [] 
  []
 
@@ -1652,10 +1653,10 @@ Overfull \hbox (142.98996pt too wide) in paragraph at lines 251--252
 File: img/locationPage.PNG Graphic file (type png)
 
 <use img/locationPage.PNG>
-Package pdftex.def Info: img/locationPage.PNG used on input line 257.
+Package pdftex.def Info: img/locationPage.PNG used on input line 266.
 (pdftex.def)             Requested size: 499.11345pt x 230.36005pt.
 
-Overfull \hbox (109.11345pt too wide) in paragraph at lines 257--258
+Overfull \hbox (109.11345pt too wide) in paragraph at lines 266--267
  [] 
  []
 
@@ -1663,10 +1664,10 @@ Overfull \hbox (109.11345pt too wide) in paragraph at lines 257--258
 File: img/userManagement.PNG Graphic file (type png)
 
 <use img/userManagement.PNG>
-Package pdftex.def Info: img/userManagement.PNG used on input line 262.
+Package pdftex.def Info: img/userManagement.PNG used on input line 271.
 (pdftex.def)             Requested size: 966.6089pt x 191.2139pt.
 
-Overfull \hbox (576.6089pt too wide) in paragraph at lines 262--263
+Overfull \hbox (576.6089pt too wide) in paragraph at lines 271--272
  [] 
  []
 
@@ -1675,17 +1676,17 @@ Overfull \hbox (576.6089pt too wide) in paragraph at lines 262--263
 File: img/ionicmanepage.PNG Graphic file (type png)
 
 <use img/ionicmanepage.PNG>
-Package pdftex.def Info: img/ionicmanepage.PNG used on input line 268.
+Package pdftex.def Info: img/ionicmanepage.PNG used on input line 277.
 (pdftex.def)             Requested size: 255.95561pt x 454.69763pt.
 
 <img/toursandlocations.PNG, id=360, 465.99094pt x 405.76593pt>
 File: img/toursandlocations.PNG Graphic file (type png)
 
 <use img/toursandlocations.PNG>
-Package pdftex.def Info: img/toursandlocations.PNG used on input line 273.
+Package pdftex.def Info: img/toursandlocations.PNG used on input line 282.
 (pdftex.def)             Requested size: 465.98979pt x 405.76494pt.
 
-Overfull \hbox (75.98979pt too wide) in paragraph at lines 273--274
+Overfull \hbox (75.98979pt too wide) in paragraph at lines 282--283
  [] 
  []
 
@@ -1713,10 +1714,10 @@ Overfull \hbox (75.98979pt too wide) in paragraph at lines 273--274
 File: img/dataModels.PNG Graphic file (type png)
 
 <use img/dataModels.PNG>
-Package pdftex.def Info: img/dataModels.PNG used on input line 386.
+Package pdftex.def Info: img/dataModels.PNG used on input line 395.
 (pdftex.def)             Requested size: 484.81006pt x 298.86581pt.
 
-Overfull \hbox (94.81006pt too wide) in paragraph at lines 386--387
+Overfull \hbox (94.81006pt too wide) in paragraph at lines 395--396
  [] 
  []
 
@@ -1788,7 +1789,7 @@ relPC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Us
 ers/KharelPC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb
 ><C:/Users/KharelPC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmt
 ti10.pfb>
-Output written on project.pdf (35 pages, 1458739 bytes).
+Output written on project.pdf (35 pages, 1459985 bytes).
 PDF statistics:
  479 PDF objects out of 1000 (max. 8388607)
  98 named destinations out of 1000 (max. 500000)
