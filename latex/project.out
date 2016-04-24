@@ -18,12 +18,13 @@
 \BOOKMARK [1][-]{section.4.5}{Send-grid - Email Delivery}{chapter.4}% 18
 \BOOKMARK [1][-]{section.4.6}{Cross-Platform Development}{chapter.4}% 19
 \BOOKMARK [1][-]{section.4.7}{Google Maps}{chapter.4}% 20
-\BOOKMARK [0][-]{chapter.5}{System Design}{}% 21
+\BOOKMARK [0][-]{chapter.5}{System Design, Implementation and Deployment}{}% 21
 \BOOKMARK [1][-]{section.5.1}{System prototype}{chapter.5}% 22
 \BOOKMARK [1][-]{section.5.2}{Architecture}{chapter.5}% 23
 \BOOKMARK [2][-]{subsection.5.2.1}{Presentation Layer}{section.5.2}% 24
 \BOOKMARK [2][-]{subsection.5.2.2}{Business Logic }{section.5.2}% 25
 \BOOKMARK [2][-]{subsection.5.2.3}{Data Layer}{section.5.2}% 26
-\BOOKMARK [0][-]{chapter.6}{System Evaluation}{}% 27
-\BOOKMARK [1][-]{section.6.1}{Testing}{chapter.6}% 28
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 29
+\BOOKMARK [1][-]{section.5.3}{Deployment - Digital Ocean}{chapter.5}% 27
+\BOOKMARK [0][-]{chapter.6}{System Evaluation}{}% 28
+\BOOKMARK [1][-]{section.6.1}{Testing}{chapter.6}% 29
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 30
