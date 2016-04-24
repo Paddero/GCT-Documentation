@@ -250,7 +250,8 @@ About seven to ten pages.
 \end{itemize}
 
 
-\chapter{System Design}
+
+\chapter{System Design, Implementation and Deployment}
 As many pages as needed.
 	\section {System prototype}
 	Prototyping tools used : Reasonable amount of time was spent initially in the design phase of this application . We have designed our both backend (Admin portal ) and Ionic mobile app using , one of the most popular prototyping software called JustInMind Prototyper. 
@@ -484,6 +485,14 @@ Controller to receive all the locations of a specific tour and sorting by timest
 	});
 	\end{minted}
 		
+\section{Deployment - Digital Ocean}
+	Digital Ocean is a provider of Virtual Private Servers (VPS) that all run over the internet. Their claim to fame is the speed of their images (they were one of the first, if not the first, providers to offer SSD images) and their assertion that it only takes 55 seconds to setup an SSD cloud server. Once you get through the initial account setup process (username and password, billing setup) this isn’t too far off from reality.  Digital ocean is very straight forward to deploy your application and very simpler other cloud hosting provider like Amazon Aws , Azure and Heroku. We also a free digital ocean subscription from GitHub student pack and we used it throughout the development of backend. 
+	
+	Instruction to deploy on cloud server:
+	please follow this link here, official digital ocean instructions for deploying a nodejs app for production.
+	
+	https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
+
 
 \chapter{System Evaluation}
 
@@ -508,9 +517,9 @@ Controller to receive all the locations of a specific tour and sorting by timest
     \textbf{Extensibility} - The development of API makes it possible for many applications to consume the data. If Galway Civic Trust want to use the tour information in different project/system, they do not have to create or insert the same data in another application . The data can be easily shared using the API we built in this project for the consumption by mobile devices.
     Lets say, if GCT want to add one more feature in the future, developer can easily insert a route code a controller to do that specific task. There is absolutely no need and will never have to mock around with other functionality to implement a new feature. No technical debt has to be paid back to add new functionality because the project was developed by adapting various software design principles and design patterns. 
     
-    
 	\section{Testing}
-	Talk about selenium web-driver Java.
+	We do believe our system is robust because we have tested all the functionality throughout the development process. We used Selenium Web-driver to test the admin portal. We have tested all the core functionality using Junit (Web-driver), tested browser compatibility and Ionic App has been tested in many different mobile devices. All the Junit test cases are available in the Git-Hub repository. Both Admin Panel (Backend)  and the Ionic App is free of bugs, and run very smoothly.  The chances of crashing is very unlikely, unless there is a fault in the hardware itself.  
+	
 	
 \begin{itemize}
 	\item Prove that your software is robust. How? Testing etc. 
