@@ -41,22 +41,24 @@ In partnership with the Department of Social Protection, Galway City Council and
 	The goals and objectives of developing this system for the Galway Civic Trust, is to allow for instantaneous synchronisation of the database and the consuming devices through an API so that the data can be received in real time. The development of such an application will differently solve the problem for the Galway Civic Trust. This application will eliminate the need for time consuming visits to GMIT, and enable the Galway Civic Trust to effectively and efficiently make any adjustments to existing tours or create new tours in the cross platform mobile application through the use of the Admin Panel web application.
 	
 	\section {Previous work}
-	There were multiple apps developed for Galway civic trust for every new tour. All the content used in the app was static contents therefore It made it impossible to update existing tours or add more tour as needed in the feature.
+	In previous years the Galway Civic Trust approached GMIT in order to create Walking Tour mobile applications for them. There were two applications made. One using the Ionic Framework and  Angular JS, the second was completed using Phonegap and the jQuery Mobile Framework. A major draw back to these applications is the fact that they both use static data contained with in the application. This meant that the trust had no way of preforming any adjustments to the applications. Nor could they add more tours to them.
 	
 	\section {Purpose}
-	The whole purpose of this application is to facilitate Galway Civic Trust to CRUD tours or any locations of interests via admin portal. System admin is able to manage the content and this will be reflected in the mobile app.  The end user will be able to use their mobile phone to have a look at different places of interests in Galway.  The hybrid mobile app will provide end user information regarding the tours. Mobile app can be very useful to tourist travelling to Galway.
+	The whole purpose of this project is to develop a system that facilitates the need the trust had to be able to create tours without the need to have a separate Mobile application developed for each tour. Secondly to have a cross platform mobile application to consume the data content. We have aimed to achieve this by creating a system that enables the trust to perform all the necessary tasks involved in the creation and maintenance of the walking tours, and to produce a mobile application that consumes this data. We believe the system that has been created achieves this task. The Admin Portal web application provides all necessary functionality to enable the Galway Civic Trust to create/maintain the tours that they have created, and the Ionic cross platform mobile application is able to display the tours through static data and dynamic data.
 	
 	\section {Scope Objective and Goals}
-	The project is separated into three different independent parts.
-	1: Backed (Admin Panel): Allows system user to perform Create / Read / Update / Delete operation using graphical and interactive user interface. Different roles has been added assign admins, example Super Admin have permission to manage other admin accounts whereas regular admin don’t.
-	2: RESTful API: Allows mobile devices to consume the JSON data. Changes made in the database is reflected by an API and consuming devices automatically receive the changes in real-time.
-	3: Ionic Mobile App: Cross platform hybrid mobile app has been developed using Ionic framework.  App communicates with the API and pull the data.
+	This project has been separated into three uniquely different independent parts that all communicate with each other. 
+	\begin{enumerate}
+		\item{The Back-end (Admin Panel): Used by Galway Civic Trust to manage and maintain all existing tours and create new tours through the use of a graphical and interactive user interface. Different user roles have been added these include admins, Super Admins. Super Admins have permission to manage/add new admin accounts whereas regular admins don’t.}
+		\item{RESTful API: Used by both the Admin Panel and the Ionic App and allows mobile devices to consume the JSON data. Changes made in the database can in real-time be consumed by devices through the use of the API}
+		\item{Ionic Mobile App: Cross platform hybrid mobile app has been developed using Ionic framework. The mobile application pulls the data through its communication with the API.}
+	\end{enumerate}
 	
-	 Objective and Goals: Our objective and goals comes from the previous which work which was carried out by the past Software Development Students of GMIT. Our main objective and goals is to solve the problem stated in the problem statement. Our main goals and objective of this project are as follows:
+	 Objective and Goals: Our objectives and goals stems from projects/systems previously completed by former students of Software Development Course in GMIT. Our main objective and goal is to solve the problem stated in the problem statement. Our main goals and objectives of this project are as follows:
 	 \begin{itemize}
-		 \item Develop Backend for content management.
-		\item Develop Restful API so that the client app can consume data in real time. 
-		\item Cross platform hybrid mobile app for consuming the API.
+		\item Develop Back-end for tour content management.
+		\item Develop Restful API so that the client application can consume data in real time. 
+		\item Cross platform hybrid mobile application for consuming the API.
 		\item Google Maps navigation and direction services.
 		\item Instant synchronization of data  between API consuming devices and backend. 
 	\end{itemize}
