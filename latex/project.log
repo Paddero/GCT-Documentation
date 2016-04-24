@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  24 APR 2016 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  24 APR 2016 18:22
 entering extended mode
 **./project.tex
 (project.tex
@@ -1797,6 +1797,12 @@ lmr/m/n/12 29
  []
 
 [29])
+Overfull \hbox (13.9399pt too wide) in paragraph at lines 494--495
+[]\OT1/lmr/m/n/12 https://www.digitalocean.com/community/tutorials/how-to-set-u
+p-a-node-
+ []
+
+
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 \OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
 lmr/m/n/12 30
@@ -1855,7 +1861,7 @@ relPC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Us
 ers/KharelPC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb
 ><C:/Users/KharelPC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmt
 ti10.pfb>
-Output written on project.pdf (35 pages, 1466968 bytes).
+Output written on project.pdf (35 pages, 1463948 bytes).
 PDF statistics:
  484 PDF objects out of 1000 (max. 8388607)
  99 named destinations out of 1000 (max. 500000)
