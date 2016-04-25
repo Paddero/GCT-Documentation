@@ -10,8 +10,8 @@ A brief description of what the project is, in about two-hundred and fifty words
 
 \paragraph{Authors}
 This project has been developed by 3 fourth year students: Arjun Kharel, Trevor Davies and Patryk Piecha for the Bachelors of Science Honours Degree in Software Development.
-Arjun was responsible for the back-end web application.
-Patryk and Trevor were responsible for the mobile application.
+Arjun was responsible for the development of  back-end(Admin Portal) web application.
+Patryk and Trevor, Arjun were responsible for the mobile application and every one of us contributed in the documentation. 
 
 \chapter{Background}
  \cite{galwayTourism} Galway City originally formed from a small fishing village located in the area near the Spanish Arch called ‘The Claddagh’ where the River Corrib meets Galway Bay. Galway later became a walled town in the year 1232 after the territory was captured by the Anglo Normans lead by Richard De Burgo. The town walls, some sections of which can be seen today near the Spanish Arch, were constructed circa 1270. A charter was granted in 1396 by Richard II which transferred governing powers to 14 merchant families, known locally as the 14 tribes of Galway. 
@@ -610,11 +610,8 @@ Controller to receive all the locations of a specific tour and sorting by timest
 	}
 \end{minted}
 	
-	 
-	
-	
 	\section{Limitations}
-	The offline functionality is limited to certain features. The nature of this system requires that there be a constant internet connection to enable data synchronisation between the mobile application and the online Web server(API).
+	The offline functionality is limited to certain features. The nature of this system requires that there be a constant internet connection to enable data synchronisation between the mobile application and the online Web server(API). We looked at the Couch/Pouch database technology too, and it is great for offline synchronisation provided the data is text. Our system have images for different locations and tours and only the path of the image in stored in the MongoDB database. We were also very aware of base64 encoding of images but we decided not to do so because it is not very productive and  is inefficient  because it increases the file size significantly and could affect the scalability of the system therefore we decided to make use of ionic local storage. It is always a best practise to store the path of the image in the database because it is very fast and does not overload the database.  
 	The offline service in our application was added in order to make the application more productive. The offline service needs an initial internet connection to download the tour data from the database, once it download it is stored in the devices local storage thus enabling the user to still access tour information.
 	In order to make the best use of the system we would recommend the use of a internet connection(where possible) to take advantage of all the features of the application. 
 
@@ -623,17 +620,16 @@ Controller to receive all the locations of a specific tour and sorting by timest
 It has been very interesting and rewarding to have done this project for the Galway Civic Trust. We have all learned about a small part of the organisation, the Walking tours the trust provides to all tourists who visit Galway City, and a good bit about history of the City itself.   
 During the develop of this project we have all learned about some new technologies and re-enforced knowledge of one or two of these technologies.
 The objectives and goals set out in the problem statement have been solved and achieved. These were to develop a system by which The Galway Civic Trust could accomplish the creation of new Walking Tours and maintain them without the need of a new Mobile Application having to be made every time they have a new tour.
-The information held within the database is dynamically distributed to the Mobile Application. End users then have the option to save the data received to local storage, so that it can be accessed when they do not have an internet connection. All of the tour locations are displayed on a map dynamically and because of the local storage these tour locations can also be displayed on a static map. The system that's been created has many features which all make using both the Web Application and the Mobile Application easy to use. The back-end database is well protected from potential attacks, this has been achieved by using jwt.  
-The Galway Civic Trust now has at its disposal a system that can dynamically maintain and create new Walking Tours. By using the RESTful API any changes in the tour information can be instantaneously delivered to any number of devices using the API. The system is safe from any external injection/attacks we have have tested in various different platforms.  
+
+Full content management (Admin portal) for Galway Civic Trust has been developed and is already hosted on Digital Ocean. Admin Portal provides Galway Civic Trust system admin to perform all the CRUD operations regarding the tours/locations. We have integrated different roles for system admin. Super(root) admin and regular admin. Super admin have privileges to manage other regular system admins, and this was achieved by having a 'Role' field in the database. If system admin forgot their login password, it can be recovered. The password reset link will be sent to his/her email within split seconds and they can go through the process of resetting the password. 
+We make sure the API and backend(Admin portal) is fully secured from any external injections or attacks. The API comprises of more than 20 endpoints/routes to perform various types of requests and all the endpoints are fully protected using JTW- JSON web tokens authentication. 
+
+
+The mobile application has been developed consumption of the tours from an API. Any changes in the datasets is instantly reflected in the consuming mobile devices and synchronisation is very fast and effective. Mobile app provides a complete navigations/directions of a tour and its locations. We have integrated with google maps API to provide navigation service. The maps also displays the approximate distance and time to complete a tour and is dynamically changed when use move to different location. Mobile application is making extensive use of google maps API for efficient navigations. 
+In order to increase the productivity of a mobile application, we have integrated the offline system. End user can download the tour they would like to make available offline and it is stored in local storage so that it can be accessed when they do not have an internet connection. 
+ 
+The Galway Civic Trust now has at its disposal a system that can dynamically maintain and create new Walking Tours. By using the RESTful API any changes in the tour information can be instantaneously delivered to any number of devices consuming the data from API. The system is safe from any external injection/attacks we have have tested in various different platforms.  
 The completion of the tasks has been achieved by applying the principles and methods we have been taught through the year in software development.  
-
-
-
-\chapter{Recommendations}
-Although we have developed a working system it doesn't mean it can't be extended and approved upon to meet evolving requirements.
-As mentioned in the system evaluation sections, there are a few limitations to the technologies we have chosen. 
-First limitation was : Goggle Map API (Numbering system). When you would like to display the markers for more than ten locations, Google Map API does not provide the markers(numbering) mechanism for more than ten markers but you can offcourse see the marker but it will not be numbered. 
-
 
 
 \chapter{GitHub Links}

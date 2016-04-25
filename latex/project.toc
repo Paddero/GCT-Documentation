@@ -35,5 +35,4 @@
 \contentsline {section}{\numberline {6.1}Testing}{41}{section.6.1}
 \contentsline {section}{\numberline {6.2}Limitations}{43}{section.6.2}
 \contentsline {chapter}{\numberline {7}Conclusion}{44}{chapter.7}
-\contentsline {chapter}{\numberline {8}Recommendations}{45}{chapter.8}
-\contentsline {chapter}{\numberline {9}GitHub Links}{46}{chapter.9}
+\contentsline {chapter}{\numberline {8}GitHub Links}{46}{chapter.8}
