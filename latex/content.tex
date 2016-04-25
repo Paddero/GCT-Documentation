@@ -92,7 +92,6 @@ A cross platform mobile development framework for the mobile application was dec
 We used Agile software development methodology for this project because of the projects nature. The requirement was not clearly specified to us and therefore, we had to develop the system in an incremental way. We had a weekly project meeting with our project supervisor Damien Costello. Mr. Damien Costello helped to guiding us throughout the entire development of this project. Every week/fortnight  our work was presented to our project supervisor and feedback was received.  As the development group consisted of three members, we had two-three meetings per week to discuss how we were getting on with  the project. We also created the facebook group chat for interaction outside the college. 
 
 
-Testing: Talk about Selenium Webdriver here.... Attach few test cases...
 
 
 \chapter{Technology Review}
@@ -187,12 +186,64 @@ Testing: Talk about Selenium Webdriver here.... Attach few test cases...
 		\section{Google Maps}
 		For GPS navigation and directions of a tour in consumer (ionic app), google Direction service is used. It allows you to calculate directions by using the DirectionsService Object. Adapted from \cite{GoogleMapDirection}, the official documentation .This object communicates with the Google Maps API Directions Service which receives direction requests and return computed results. You may either handle these directions results yourself or use the DirectionsRenderer object to render these results. 
 		
-	
-About seven to ten pages.
-\begin{itemize}
-	\item Describe each of the technologies you used at a conceptual level. Standards, Database Model (e.g. MongoDB, CouchDB), XMl, WSDL, JSON, JAXP.
-	\item Use references (IEEE format, e.g. [1]), Books, Papers, URLs (timestamp) – sources should be authoritative. 
-\end{itemize}
+		\subsection{Online Map}
+		
+		The way the dynamic (online) map works, it takes the first point and second point of the tour that the user has selected and set it as current location and next location. Having both of these locations, we can dynamically call the google API and provide the locations that we have. Markers with labels (1-9) are set at the points provided and a polyline is drawn between the two points to give the user a visual image of how far apart the points are. A google map distance matrix API was also used on the dynamic map, by providing the points that we have (current and next location) it counts for us how far are the distances apart and how long it takes to get there. The API returns a JSON which we can save it to scope and reuse whenever it is needed. The distance and time are measured in metric system as this is what we requested in the API. This API was needed to be enabled in the official google maps API settings, we used GCT login credentials that we created for them so they can access and change whatever API is needed for them in the future.
+		
+		We set the start of the google API so we can add the tour points dynamically.\\
+\begin{minted}{js}
+	var distanceUrl = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=metric';
+\end{minted}
+
+		As we loop through current location and next location to set the markers on the map, we also add more Google API, at first point add "&origins" and the lat and lng of current location. At second point we add "&destinations" together with the lat and lng of the next location in the tour. We also set the mode to walking"&mode=walking" and pass in the key from GCT google maps API. (The key was also generated within the google maps API settings for the GCT login credentials).
+		
+\begin{minted}{js}
+	for(var i = $scope.currLocation; i <= $scope.nextLocation; i++) {
+		if(i < $scope.nextLocation)
+		{
+			distanceUrl += '&origins=' + $scope.locationDataToTake[i].xCoordinate + ',' + $scope.locationDataToTake[i].yCoordinate;
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng($scope.locationDataToTake[i].xCoordinate,$scope.locationDataToTake[i].yCoordinate),
+				label: (i+1).toString()
+			})
+			marker.setMap($scope.tourMap);
+		}
+		else {
+			distanceUrl += '&destinations=' + $scope.locationDataToTake[i].xCoordinate + ',' + $scope.locationDataToTake[i].yCoordinate + '&mode=walking&key=AIzaSyCBYil1DfXoRTgEcqB0-wL99XVTKqEkVio';
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng($scope.locationDataToTake[i].xCoordinate,$scope.locationDataToTake[i].yCoordinate),
+				label: (i+1).toString()
+			})
+			marker.setMap($scope.tourMap);
+		}
+	}
+\end{minted}
+		
+		\subsection{Offline Map/Tab}
+		
+		
+		Once the user clicks on the download tour button, the tour data that is in the scope, is passed to the local storage of the ionic app. All the images are saved to the local file system as we do not know how many images or the sizes of the images that the GCT will want to use for each tour so we could not rely on the 5MB that local storage provides. All of this data is then retrieved from local storage and local file system once the user heads to the My Saved Tour tab. 
+		
+		Google static map API was used for the offline tour, this API came in very handy as by passing into the API what we wanted, we receive an image of the static google map view with markers of the colour we wanted, labels, and a polyline between the points we wanted. We then saved this image together with the rest of the images. Just like the dynamic map distance matrix API, we needed to build the right URL for the google static map API on the go. We created a separate URLs, one for the points and the other for the markers and combined them into one at a later stage of the code. As shown below,
+\begin{minted}{js}
+		var mapURL = 'https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCBYil1DfXoRTgEcqB0-wL99XVTKqEkVio&size=300x300&format=JPEG&maptype=roadmap&path=color:0x0000ff80|weight:1';
+		var markers = '&markers=';
+\end{minted}
+		
+		As we loop through the tour, we add each point to the mapURL (which will show each location of the tour) and to markers we specify what color and label it should have. The first point will be a green marker with label ‘S’ to show the user where the starting point is. 
+		
+\begin{minted}{js}
+		for(var i = 0; i < tourData.length; i++) {
+			
+			mapURL += '|' + tourData[i].xCoordinate + ',' + tourData[i].yCoordinate;
+			markers += i == 0 ? 'color:green|label:S|' + tourData[i].xCoordinate + ',' + tourData[i].yCoordinate : '&markers=size:mid|color:red|label:'+(i+1)+'|' + tourData[i].xCoordinate + ',' + tourData[i].yCoordinate;
+		}
+		mapURL += markers;
+		
+		Once the mapURL is combined with markers, we pass it to the MapDownload function as shown below,
+		$scope.MapDownload(mapURL);
+\end{minted}
+		
 
 
 
@@ -463,22 +514,89 @@ Controller to receive all the locations of a specific tour and sorting by timest
     Lets say, if GCT want to add one more feature in the future, developer can easily insert a route code a controller to do that specific task. There is absolutely no need and will never have to mock around with other functionality to implement a new feature. No technical debt has to be paid back to add new functionality because the project was developed by adapting various software design principles and design patterns. 
     
 	\section{Testing}
-	We do believe our system is robust because we have tested all the functionality throughout the development process. We used Selenium Web-driver to test the admin portal. We have tested all the core functionality using Junit (Web-driver), tested browser compatibility and Ionic App has been tested in many different mobile devices. All the Junit test cases are available in the Git-Hub repository. Both Admin Panel (Backend)  and the Ionic App is free of bugs, and run very smoothly.  The chances of crashing is very unlikely, unless there is a fault in the hardware itself.  
+	We believe that the system we have created is very robust, this is because we have tested all of the functionality throughout the development process. Selenium Web-Driver has been used to test the Admin Panel. All of the core functionality has been test thoroughly using Junit(Web Driver). The Admin Panel passed all browser compatibility tests, browsers tested were Firefox, Chrome and Internet Explorer. The Ionic mobile application was tested on three different Android devices(Jelly Bean 4.1, KitKat 4.4 and Lollipop 5.0). During testing on these devices we found that the application did not run properly on a Jelly Bean phone.
+	The Admin Panel and the Ionic application are both free from bugs and run very smoothly. The likely hood of crashes is very unlikely, unless there is an hardware fault.
+	
+	Below is an example of a test case:
+\begin{minted}{java}
+	import org.junit.Before;
+	import org.junit.Test;
+	import org.openqa.selenium.By;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.firefox.FirefoxDriver;
+	import org.openqa.selenium.support.ui.ExpectedConditions;
+	import org.openqa.selenium.support.ui.WebDriverWait;
+	
+	public class EditTourTest {
+	private WebDriver driver;
+	
+	@Before
+	public void loginFirst() {
+	driver = new FirefoxDriver();
+	driver.get("http://127.0.0.1:9000/");
+	WebElement userName = driver.findElement(By.id("loginEmail"));
+	userName.sendKeys("useremail@domain.com"); // must replace this this registered (real email)
+	
+	WebElement password = (new WebDriverWait(driver, 5))
+	.until(ExpectedConditions.presenceOfElementLocated(By.name("password")));
+	
+	password.sendKeys("test");
+	WebElement loginBtn = driver.findElement(By.name("login_btn"));
+	loginBtn.click();
+	}
+	
+	@Test
+	public void test() {
+	WebElement editbtn = (new WebDriverWait(driver, 5))
+	.until(ExpectedConditions.presenceOfElementLocated(By.name("edit-btn")));
+	editbtn.click();
+	
+	// change the status
+	WebElement checkBoxStatus = (new WebDriverWait(driver, 5))
+	.until(ExpectedConditions.presenceOfElementLocated(By.id("later")));
+	checkBoxStatus.click();
+	
+	WebElement titleInputField = (new WebDriverWait(driver, 5))
+	.until(ExpectedConditions.presenceOfElementLocated(By.name("titlelbl")));
+	titleInputField.clear();
+	titleInputField.sendKeys("This is a test");
+	
+	WebElement saveChangesBtn = (new WebDriverWait(driver, 5))
+	.until(ExpectedConditions.presenceOfElementLocated(By.id("loadButton")));
+	saveChangesBtn.click();
+	
+	WebElement closePopUpModel = (new WebDriverWait(driver, 5))
+	.until(ExpectedConditions.presenceOfElementLocated(By.name("closeBtn")));
+	closePopUpModel.click();
+	}
+	
+	}
+\end{minted}
+	
+	 
 	
 	
-\begin{itemize}
-	\item Prove that your software is robust. How? Testing etc. 
-	\item Use performance benchmarks (space and time) if algorithmic.
-	\item Measure the outcomes / outputs of your system / software against the objectives from the Introduction.
-	\item Highlight any limitations or opportuni-ties in your approach or technologies used.
-\end{itemize}
+	\section{Limitations}
+	The offline functionality is limited to certain features. The nature of this system requires that there be a constant internet connection to enable data synchronisation between the mobile application and the online Web server(API).
+	The offline service in our application was added in order to make the application more productive. The offline service needs an initial internet connection to download the tour data from the database, once it download it is stored in the devices local storage thus enabling the user to still access tour information.
+	In order to make the best use of the system we would recommend the use of a internet connection(where possible) to take advantage of all the features of the application. 
+
 
 \chapter{Conclusion}
 It has been very interesting and rewarding to have done this project for the Galway Civic Trust. We have all learned about a small part of the organisation, the Walking tours the trust provides to all tourists who visit Galway City, and a good bit about history of the City itself.   
-During the develop of this project we have all learned about some new technologies and re-enforced knowledge of one or two of these technologies. We have succeeded in completing the objectives and goals set out at the started of this project. These were to develop a system by which The Galway Civic Trust could accomplish the creation of new Walking Tours and maintain them without the need of a new Mobile Application having to be made every time they have a new tour. This completion of the tasks has been achieved by applying the principles and methods we have been taught through the year in software development. 
-About three pages. WRITE YOUR CONCUSION HERE...
+During the develop of this project we have all learned about some new technologies and re-enforced knowledge of one or two of these technologies.
+The objectives and goals set out in the problem statement have been solved and achieved. These were to develop a system by which The Galway Civic Trust could accomplish the creation of new Walking Tours and maintain them without the need of a new Mobile Application having to be made every time they have a new tour.
+The Galway Civic Trust now has at its disposal a system that can dynamically maintain and create new Walking Tours. By using the RESTful API any changes in the tour information can be instantaneously delivered to any number of devices using the API. The system is safe from any external injection/attacks we have have tested in various different platforms.  
+The completion of the tasks has been achieved by applying the principles and methods we have been taught through the year in software development.  
 
-\begin{itemize}
-	\item Briefly summarise your context and ob-jectives (a few lines).
-	\item Highlight your findings from the evalua-tion section / chapter and any opportuni-ties identified.
-\end{itemize}
+
+
+\chapter{Recommendations}
+Although we have developed a working system it doesn't mean it can't be extended and approved upon to meet evolving requirements.
+As mentioned in the system evaluation sections, there are a few limitations to the technologies we have chosen. 
+First limitation was : Goggle Map API (Numbering system). When you would like to display the markers for more than ten locations, Google Map API does not provide the markers(numbering) mechanism for more than ten markers but you can offcourse see the marker but it will not be numbered. 
+
+
+
+\chapter{GitHub Links}
