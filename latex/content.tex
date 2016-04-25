@@ -80,79 +80,19 @@ In partnership with the Department of Social Protection, Galway City Council and
 
 \chapter{Methodology}
 
-The process of deciding which technologies to use was done after the initial meeting with the Galway Civic Trust. After receiving the requirements we started to research which technologies and processes would be best suited for the project based on the requirements. It was decided very early that a NoSQL Database would be best for the backend and a cross platform development framework for the mobile app. We then discussed which NoSQL database to use and decided that MongoDB would be used, and the for the mobile app, we decided to use the Ionic Mobile Framework. Because of using MongoDB a MEAN stack approach was taking for developing the back end server side At this point we created a project plan using Microsoft Project .. more to come
+The process of deciding which technologies to use was done after the initial meeting with the Galway Civic Trust. After receiving the objectives and goals for the project we started to research which technologies and processes would be best suited for the project based on these objectives and goals. As we were not given a list of requirements our first task in developing this system was to decide on a list of requirements. Firstly we discussed the back-end web application that would be developed to achieve the main objective which was to create a means by which the Galway Civic Trust could create and maintain data relating to the creation of walking tours. At our first meeting it was decided that a NoSQL Database would be best for storing the date required for the back-end. Because MongoDB had been used before hand in a previous project it was decided that we would use it as the database for the project and that the whole back-end system would adapt a MEAN stack approach. A RESTful API would be used as the middleware, which would sit in-between the database and the Mobile application.  At this point we discussed what type of Mobile application would be developed to consume the data within the database which would be provided by the API.
 
- 
-This process was done in the technology review section.  After doing some research on the technologies, that can be used to develop this system, we created a project plan using Microsoft project management studio. We developed the use cases of user interaction in the system, data models and rough initial prototype. After doing some research on the technologies, we decided to use MEAN stack to develop of Backend (Admin Portal) and Ionic for cross platform app development. The reasons choosing for mean stack are as follows:
+A cross platform mobile development framework for the mobile application was decided to be the best route to take when developing the end-user product and so we chose to use Ionic Mobile Framework. At this point we created a project plan using Microsoft Project to assign different tasks. Because the project had been divided into three different parts we created three separate Github repositories, one for the back-end, one for the Ionic Application and one for documentation. 
+\begin{itemize}
+	\item{(Back-End)https://github.com/ultimatecodelab/Galway-Civic-Trust.git}
+	\item{(Ionic Mobile Application)https://github.com/TrevorDavies/Galway-Civic-Trust.git}
+	\item{(Documentation)https://github.com/Paddero/GCT-Documentation.git}
+\end{itemize}
 
-
-We use Agile software development methodology for this project because of the project nature. The requirement was not clearly specified to us and therefore, we had to develop the system in incremental way. We had a weekly project meeting with our project supervisor Damien Costello. Mr. Damien Costello was guiding us throughout the entire development of this project. Every week our work was presented to our project supervisor and feedbacks were received.  As a group of three, we had two-three meetings per week to discuss about the project. We also created the facebook group for interaction outside the college. 
-
-Our project consisted of both backend (Admin portal) and ionic mobile app. We created three different repositories in Github because they were developed independent of one another, example back-end and ionic app.  We used Github throughout the developed and we would recommend you to check our Github repositories to verify this. 
+We used Agile software development methodology for this project because of the projects nature. The requirement was not clearly specified to us and therefore, we had to develop the system in an incremental way. We had a weekly project meeting with our project supervisor Damien Costello. Mr. Damien Costello helped to guiding us throughout the entire development of this project. Every week/fortnight  our work was presented to our project supervisor and feedback was received.  As the development group consisted of three members, we had two-three meetings per week to discuss how we were getting on with  the project. We also created the facebook group chat for interaction outside the college. 
 
 
 Testing: Talk about Selenium Webdriver here.... Attach few test cases...
-
-The project 
-About one to two pages.
-Describe the way you went about your project:
-\begin{itemize}
-	\item Agile / incremental and iterative approach to development. Planning, meetings. (2 para)
-	\item What about validation and testing? Junit or some other framework. 2(para)
-	\item If team based, did you use GitHub during the development process. (1 para)
-	
-	\item Selection criteria for MEAN stack and Ionic Framework. (10 lines)
-\end{itemize}
-Check out the nice graphs in Figure \ref{tikz:graphs}, and the nice diagram in Figure \ref{tikz:mydiagram}.
-
-\begin{figure}
-	\centering
-	\begin{tikzpicture}
-	\begin{scope}[every node/.style={circle,thick,draw}]
-	\node (a) at (0,2) {a};
-	\node (b) at (2,2) {b};
-	\node (c) at (2,0) {c};
-	\node (d) at (0,0) {d};
-	\end{scope}
-	\begin{scope}[every edge/.style={draw=black,thick}]
-	\path (a) edge (b);
-	\path (b) edge (c);
-	\path (b) edge (d);
-	\path (c) edge (d);
-	\end{scope}
-	\node () at (1,-1) {$G_1$};
-	\end{tikzpicture}
-	\hspace{1.5cm}
-	\begin{tikzpicture}
-	\begin{scope}[every node/.style={circle,thick,draw}]
-	\node (1) at (0,2) {a};
-	\node (2) at (2,2) {b};
-	\node (3) at (2,0) {c};
-	\node (4) at (0,0) {d};
-	\end{scope}
-	\begin{scope}[every edge/.style={draw=black,thick}]
-	\path (1) edge (2);
-	\path (1) edge (3);
-	\path (1) edge (4);
-	\path (3) edge (4);
-	\end{scope}
-	\node () at (1,-1) {$G_2$};
-	\end{tikzpicture}
-	\caption{Nice pictures}
-	\label{tikz:graphs}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\begin{tikzpicture}[node distance=6cm]
-	\node (a) [rect] {A Big Blue Block};
-	\node (b) [oval, right of=a] {And His Oval Friend};
-	\draw [line] (a) -- (b);
-	\end{tikzpicture}
-	\caption{Nice pictures}
-	\label{tikz:graphs}
-\end{figure}
 
 
 \chapter{Technology Review}
