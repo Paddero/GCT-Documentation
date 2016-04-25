@@ -26,12 +26,14 @@
 \contentsline {section}{\numberline {5.1}System prototype}{22}{section.5.1}
 \contentsline {section}{\numberline {5.2}Architecture}{22}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Presentation Layer}{23}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Business Logic }{27}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Data Layer}{30}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Deployment - Digital Ocean}{33}{section.5.3}
-\contentsline {chapter}{\numberline {6}System Evaluation}{34}{chapter.6}
-\contentsline {section}{\numberline {6.1}Testing}{35}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limitations}{37}{section.6.2}
-\contentsline {chapter}{\numberline {7}Conclusion}{38}{chapter.7}
-\contentsline {chapter}{\numberline {8}Recommendations}{39}{chapter.8}
-\contentsline {chapter}{\numberline {9}GitHub Links}{40}{chapter.9}
+\contentsline {subsection}{\numberline {5.2.2}Admin Panel}{24}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Ionic Application}{26}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Business Logic }{32}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Data Layer}{35}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.3}Deployment - Digital Ocean}{38}{section.5.3}
+\contentsline {chapter}{\numberline {6}System Evaluation}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Testing}{40}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limitations}{42}{section.6.2}
+\contentsline {chapter}{\numberline {7}Conclusion}{43}{chapter.7}
+\contentsline {chapter}{\numberline {8}Recommendations}{44}{chapter.8}
+\contentsline {chapter}{\numberline {9}GitHub Links}{45}{chapter.9}

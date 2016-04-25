@@ -24,12 +24,14 @@
 \BOOKMARK [1][-]{section.5.1}{System prototype}{chapter.5}% 24
 \BOOKMARK [1][-]{section.5.2}{Architecture}{chapter.5}% 25
 \BOOKMARK [2][-]{subsection.5.2.1}{Presentation Layer}{section.5.2}% 26
-\BOOKMARK [2][-]{subsection.5.2.2}{Business Logic }{section.5.2}% 27
-\BOOKMARK [2][-]{subsection.5.2.3}{Data Layer}{section.5.2}% 28
-\BOOKMARK [1][-]{section.5.3}{Deployment - Digital Ocean}{chapter.5}% 29
-\BOOKMARK [0][-]{chapter.6}{System Evaluation}{}% 30
-\BOOKMARK [1][-]{section.6.1}{Testing}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.2}{Limitations}{chapter.6}% 32
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 33
-\BOOKMARK [0][-]{chapter.8}{Recommendations}{}% 34
-\BOOKMARK [0][-]{chapter.9}{GitHub Links}{}% 35
+\BOOKMARK [2][-]{subsection.5.2.2}{Admin Panel}{section.5.2}% 27
+\BOOKMARK [2][-]{subsection.5.2.3}{Ionic Application}{section.5.2}% 28
+\BOOKMARK [2][-]{subsection.5.2.4}{Business Logic }{section.5.2}% 29
+\BOOKMARK [2][-]{subsection.5.2.5}{Data Layer}{section.5.2}% 30
+\BOOKMARK [1][-]{section.5.3}{Deployment - Digital Ocean}{chapter.5}% 31
+\BOOKMARK [0][-]{chapter.6}{System Evaluation}{}% 32
+\BOOKMARK [1][-]{section.6.1}{Testing}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.2}{Limitations}{chapter.6}% 34
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 35
+\BOOKMARK [0][-]{chapter.8}{Recommendations}{}% 36
+\BOOKMARK [0][-]{chapter.9}{GitHub Links}{}% 37

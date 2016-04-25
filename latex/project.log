@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.11)  25 APR 2016 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.11)  25 APR 2016 18:42
 entering extended mode
 **./project.tex
 (project.tex
@@ -1477,7 +1477,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 58--65
 [][] 
  []
 
-<img/gmit-logo.jpg, id=170, 281.853pt x 88.4103pt>
+<img/gmit-logo.jpg, id=178, 281.853pt x 88.4103pt>
 File: img/gmit-logo.jpg Graphic file (type jpg)
  <use img/gmit-logo.jpg>
 Package pdftex.def Info: img/gmit-logo.jpg used on input line 67.
@@ -1525,13 +1525,13 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Chapter 1.
 [5
 
-] <img/statsgalway.PNG, id=240, 343.2825pt x 266.49562pt>
+] <img/statsgalway.PNG, id=250, 343.2825pt x 266.49562pt>
 File: img/statsgalway.PNG Graphic file (type png)
 
 <use img/statsgalway.PNG>
 Package pdftex.def Info: img/statsgalway.PNG used on input line 23.
 (pdftex.def)             Requested size: 343.28165pt x 266.49496pt.
- <img/revenue.PNG, id=242, 341.02406pt x 271.0125pt>
+ <img/revenue.PNG, id=252, 341.02406pt x 271.0125pt>
 File: img/revenue.PNG Graphic file (type png)
 
 <use img/revenue.PNG>
@@ -1604,10 +1604,6 @@ File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) [18] [19]
 \openout3 = `project.pyg'.
 
-runsystem(pygmentize -l js -f latex -P commandprefix=PYG -F tokenmerge -o "_min
-ted-project/ED342F90E80B67DD82181892F8C7663CD366870B77571C9CE8F8C6C0342FFE6A.py
-gtex" "project.pyg" )...executed.
-
 
 (_minted-project/ED342F90E80B67DD82181892F8C7663CD366870B77571C9CE8F8C6C0342FFE
 6A.pygtex
@@ -1616,41 +1612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--1
  []
 
 )
-! Misplaced alignment tab character &.
-l.198 ...dd more Google API, at first point add "&
-                                                  origins" and the lat and l...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.198 ...rrent location. At second point we add "&
-                                                  destinations" together wit...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.198 ...e tour. We also set the mode to walking"&
-                                                  mode=walking" and pass in ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 \openout3 = `project.pyg'.
-
-runsystem(pygmentize -l js -f latex -P commandprefix=PYG -F tokenmerge -o "_min
-ted-project/DBB2F2099A8C864C939CFD43713DCE04D366870B77571C9CE8F8C6C0342FFE6A.py
-gtex" "project.pyg" )...executed.
 
 
 (_minted-project/DBB2F2099A8C864C939CFD43713DCE04D366870B77571C9CE8F8C6C0342FFE
@@ -1666,7 +1628,7 @@ gtex" "project.pyg" )...executed.
 (_minted-project/02DA6D1E2C354EFD7FA05CA6E51CDC95D366870B77571C9CE8F8C6C0342FFE
 6A.pygtex) [21]
 Chapter 5.
-<img/architecture.PNG, id=376, 452.4403pt x 323.70938pt>
+<img/architecture.PNG, id=386, 452.4403pt x 323.70938pt>
 File: img/architecture.PNG Graphic file (type png)
 
 <use img/architecture.PNG>
@@ -1679,11 +1641,11 @@ Overfull \hbox (62.43921pt too wide) in paragraph at lines 258--259
 
 [22
 
-] <img/gctloginpage.PNG, id=381, 341.77687pt x 248.42813pt>
+] <img/gctloginpage.PNG, id=391, 341.77687pt x 248.42813pt>
 File: img/gctloginpage.PNG Graphic file (type png)
 
 <use img/gctloginpage.PNG>
-Package pdftex.def Info: img/gctloginpage.PNG used on input line 264.
+Package pdftex.def Info: img/gctloginpage.PNG used on input line 265.
 (pdftex.def)             Requested size: 341.77603pt x 248.42752pt.
 
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
@@ -1692,13 +1654,13 @@ lmr/m/n/12 23
  []
 
 [23 <./img/architecture.PNG>]
-<img/MainPage.PNG, id=386, 532.99126pt x 240.9pt>
+<img/MainPage.PNG, id=396, 532.99126pt x 240.9pt>
 File: img/MainPage.PNG Graphic file (type png)
  <use img/MainPage.PNG>
-Package pdftex.def Info: img/MainPage.PNG used on input line 269.
+Package pdftex.def Info: img/MainPage.PNG used on input line 270.
 (pdftex.def)             Requested size: 532.98996pt x 240.8994pt.
 
-Overfull \hbox (142.98996pt too wide) in paragraph at lines 269--270
+Overfull \hbox (142.98996pt too wide) in paragraph at lines 270--271
  [] 
  []
 
@@ -1708,26 +1670,15 @@ Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 lmr/m/n/12 24
  []
 
-[24 <./img/gctloginpage.PNG> <./img/MainPage.PNG>]
-<img/locationPage.PNG, id=392, 499.11469pt x 230.36063pt>
+[24 <./img/gctloginpage.PNG>]
+<img/locationPage.PNG, id=402, 499.11469pt x 230.36063pt>
 File: img/locationPage.PNG Graphic file (type png)
 
 <use img/locationPage.PNG>
-Package pdftex.def Info: img/locationPage.PNG used on input line 275.
+Package pdftex.def Info: img/locationPage.PNG used on input line 276.
 (pdftex.def)             Requested size: 499.11345pt x 230.36005pt.
 
-Overfull \hbox (109.11345pt too wide) in paragraph at lines 275--276
- [] 
- []
-
-<img/userManagement.PNG, id=393, 966.61125pt x 191.21437pt>
-File: img/userManagement.PNG Graphic file (type png)
-
-<use img/userManagement.PNG>
-Package pdftex.def Info: img/userManagement.PNG used on input line 280.
-(pdftex.def)             Requested size: 966.6089pt x 191.2139pt.
-
-Overfull \hbox (576.6089pt too wide) in paragraph at lines 280--281
+Overfull \hbox (109.11345pt too wide) in paragraph at lines 276--277
  [] 
  []
 
@@ -1737,22 +1688,26 @@ Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 lmr/m/n/12 25
  []
 
-[25 <./img/locationPage.PNG> <./img/userManagement.PNG>]
-<img/ionicmanepage.PNG, id=400, 255.95625pt x 454.69875pt>
-File: img/ionicmanepage.PNG Graphic file (type png)
+[25 <./img/MainPage.PNG> <./img/locationPage.PNG>]
+<img/userManagement.PNG, id=408, 966.61125pt x 191.21437pt>
+File: img/userManagement.PNG Graphic file (type png)
 
-<use img/ionicmanepage.PNG>
-Package pdftex.def Info: img/ionicmanepage.PNG used on input line 286.
-(pdftex.def)             Requested size: 255.95561pt x 454.69763pt.
+<use img/userManagement.PNG>
+Package pdftex.def Info: img/userManagement.PNG used on input line 281.
+(pdftex.def)             Requested size: 966.6089pt x 191.2139pt.
 
-<img/toursandlocations.PNG, id=401, 465.99094pt x 405.76593pt>
-File: img/toursandlocations.PNG Graphic file (type png)
+Overfull \hbox (576.6089pt too wide) in paragraph at lines 281--282
+ [] 
+ []
 
-<use img/toursandlocations.PNG>
-Package pdftex.def Info: img/toursandlocations.PNG used on input line 291.
-(pdftex.def)             Requested size: 465.98979pt x 405.76494pt.
+<img/LandingPage.png, id=409, 455.45157pt x 408.02437pt>
+File: img/LandingPage.png Graphic file (type png)
 
-Overfull \hbox (75.98979pt too wide) in paragraph at lines 291--292
+<use img/LandingPage.png>
+Package pdftex.def Info: img/LandingPage.png used on input line 287.
+(pdftex.def)             Requested size: 455.45045pt x 408.02338pt.
+
+Overfull \hbox (65.45045pt too wide) in paragraph at lines 287--288
  [] 
  []
 
@@ -1762,13 +1717,101 @@ Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 lmr/m/n/12 26
  []
 
-[26 <./img/ionicmanepage.PNG>]
+[26 <./img/userManagement.PNG>]
+<img/TourInfoTab.png, id=415, 451.6875pt x 405.01312pt>
+File: img/TourInfoTab.png Graphic file (type png)
+
+<use img/TourInfoTab.png>
+Package pdftex.def Info: img/TourInfoTab.png used on input line 292.
+(pdftex.def)             Requested size: 451.68639pt x 405.01212pt.
+
+Overfull \hbox (61.68639pt too wide) in paragraph at lines 292--293
+ [] 
+ []
+
+
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 \OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
 lmr/m/n/12 27
  []
 
-[27 <./img/toursandlocations.PNG>]
+[27 <./img/LandingPage.png>]
+<img/TourDetailTab.png, id=420, 453.19313pt x 405.01312pt>
+File: img/TourDetailTab.png Graphic file (type png)
+
+<use img/TourDetailTab.png>
+Package pdftex.def Info: img/TourDetailTab.png used on input line 297.
+(pdftex.def)             Requested size: 453.19202pt x 405.01212pt.
+
+Overfull \hbox (63.19202pt too wide) in paragraph at lines 297--298
+ [] 
+ []
+
+
+Overfull \hbox (33.18456pt too wide) has occurred while \output is active
+\OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
+lmr/m/n/12 28
+ []
+
+[28 <./img/TourInfoTab.png>]
+<img/TakeTourTab.png, id=425, 451.6875pt x 405.76593pt>
+File: img/TakeTourTab.png Graphic file (type png)
+
+<use img/TakeTourTab.png>
+Package pdftex.def Info: img/TakeTourTab.png used on input line 301.
+(pdftex.def)             Requested size: 451.68639pt x 405.76494pt.
+
+Overfull \hbox (61.68639pt too wide) in paragraph at lines 301--302
+ [] 
+ []
+
+
+Overfull \hbox (33.18456pt too wide) has occurred while \output is active
+\OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
+lmr/m/n/12 29
+ []
+
+[29 <./img/TourDetailTab.png>]
+<img/MyTourTab.png, id=430, 461.47406pt x 408.02437pt>
+File: img/MyTourTab.png Graphic file (type png)
+ <use img/MyTourTab.png>
+Package pdftex.def Info: img/MyTourTab.png used on input line 305.
+(pdftex.def)             Requested size: 461.47292pt x 408.02338pt.
+
+Overfull \hbox (71.47292pt too wide) in paragraph at lines 305--306
+ [] 
+ []
+
+
+Overfull \hbox (33.18456pt too wide) has occurred while \output is active
+\OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
+lmr/m/n/12 30
+ []
+
+[30 <./img/TakeTourTab.png>]
+<img/MapTab.png, id=435, 454.69875pt x 405.01312pt>
+File: img/MapTab.png Graphic file (type png)
+ <use img/MapTab.png>
+Package pdftex.def Info: img/MapTab.png used on input line 309.
+(pdftex.def)             Requested size: 454.69763pt x 405.01212pt.
+
+Overfull \hbox (64.69763pt too wide) in paragraph at lines 309--310
+ [] 
+ []
+
+
+Overfull \hbox (33.18456pt too wide) has occurred while \output is active
+\OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
+lmr/m/n/12 31
+ []
+
+[31 <./img/MyTourTab.png>]
+Overfull \hbox (33.18456pt too wide) has occurred while \output is active
+\OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
+lmr/m/n/12 32
+ []
+
+[32 <./img/MapTab.png>]
 \openout3 = `project.pyg'.
 
 
@@ -1776,10 +1819,10 @@ lmr/m/n/12 27
 6A.pygtex
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 \OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
-lmr/m/n/12 28
+lmr/m/n/12 33
  []
 
-[28])
+[33])
 \openout3 = `project.pyg'.
 
 
@@ -1797,38 +1840,38 @@ lmr/m/n/12 28
 6A.pygtex
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 \OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
-lmr/m/n/12 29
+lmr/m/n/12 34
  []
 
-[29]) <img/dataModels.PNG, id=420, 484.81125pt x 298.86656pt>
+[34]) <img/dataModels.PNG, id=453, 484.81125pt x 298.86656pt>
 File: img/dataModels.PNG Graphic file (type png)
 
 <use img/dataModels.PNG>
-Package pdftex.def Info: img/dataModels.PNG used on input line 404.
+Package pdftex.def Info: img/dataModels.PNG used on input line 422.
 (pdftex.def)             Requested size: 484.81006pt x 298.86581pt.
 
-Overfull \hbox (94.81006pt too wide) in paragraph at lines 404--405
+Overfull \hbox (94.81006pt too wide) in paragraph at lines 422--423
  [] 
  []
 
 
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 \OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
-lmr/m/n/12 30
+lmr/m/n/12 35
  []
 
-[30 <./img/dataModels.PNG>]
+[35 <./img/dataModels.PNG>]
 \openout3 = `project.pyg'.
 
 
 (_minted-project/4897548298080D8070144901127336DFD366870B77571C9CE8F8C6C0342FFE
-6A.pygtex
+6A.pygtex)
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 \OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
-lmr/m/n/12 31
+lmr/m/n/12 36
  []
 
-[31])
+[36]
 \openout3 = `project.pyg'.
 
 
@@ -1838,14 +1881,14 @@ lmr/m/n/12 31
 
 
 (_minted-project/B68A96A08EDF3CF584222825B3716078D366870B77571C9CE8F8C6C0342FFE
-6A.pygtex
+6A.pygtex)
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 \OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
-lmr/m/n/12 32
+lmr/m/n/12 37
  []
 
-[32])
-Overfull \hbox (13.9399pt too wide) in paragraph at lines 490--491
+[37]
+Overfull \hbox (13.9399pt too wide) in paragraph at lines 508--509
 []\OT1/lmr/m/n/12 https://www.digitalocean.com/community/tutorials/how-to-set-u
 p-a-node-
  []
@@ -1853,55 +1896,61 @@ p-a-node-
 
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
 \OT1/lmr/m/sl/12 CHAPTER 5.  SYSTEM DESIGN, IMPLEMENTATION AND DEPLOYMENT \OT1/
-lmr/m/n/12 33
+lmr/m/n/12 38
  []
 
-[33]
+[38]
 Chapter 6.
-[34
+[39
 
 ]
 \openout3 = `project.pyg'.
 
 
 (_minted-project/7C937B7E1DC8B1C7DE8B487412BCAB931EF4047F550F69E6BBCF41831E0807
-3C.pygtex [35] [36]) [37]
+3C.pygtex [40] [41]) [42]
 Chapter 7.
-[38
+[43
 
 ]
 Chapter 8.
-[39
+[44
 
 ]
 Chapter 9.
-) (project.bbl [40
 
-] [41
+Overfull \hbox (8.40207pt too wide) in paragraph at lines 622--623
+[]\OT1/lmr/m/n/12 (Back-End)https://github.com/ultimatecodelab/Galway-Civic-Tru
+st.git 
+ []
+
+
+Overfull \hbox (5.8874pt too wide) in paragraph at lines 624--625
+[]\OT1/lmr/m/n/12 (Documentation)https://github.com/Paddero/GCT-Documentation.g
+it 
+ []
+
+) (project.bbl [45
+
+] [46
 
 ])
-runsystem(del "_minted-project\1B646880D460AED21AE435B885DB71F6D366870B77571C9C
-E8F8C6C0342FFE6A.pygtex")...executed.
-
-runsystem(del "_minted-project\D7CE01D438B44BFABAB04E974538092BD366870B77571C9C
-E8F8C6C0342FFE6A.pygtex")...executed.
-
 runsystem(del "project.pyg")...executed.
 
- [42]
+ [47]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (project.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: BB6A9F6B7CB2A7DE3F2FA796E0854292;2230.
+(rerunfilecheck)             Checksum: FD45375DB1CC48FDA497F3DD780A7626;2368.
  ) 
 Here is how much of TeX's memory you used:
- 24462 strings out of 493629
- 485710 string characters out of 3144029
+ 24490 strings out of 493629
+ 486064 string characters out of 3144029
  606890 words of memory out of 3000000
- 27178 multiletter control sequences out of 15000+200000
+ 27196 multiletter control sequences out of 15000+200000
  49781 words of font info for 44 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,6n,78p,1295b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1914,9 +1963,9 @@ nts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/lm/lmtti10.pfb>
-Output written on project.pdf (42 pages, 1462292 bytes).
+Output written on project.pdf (47 pages, 2280104 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
- 444 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
+ 480 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -195,7 +195,7 @@ We used Agile software development methodology for this project because of the p
 	var distanceUrl = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=metric';
 \end{minted}
 
-		As we loop through current location and next location to set the markers on the map, we also add more Google API, at first point add "&origins" and the lat and lng of current location. At second point we add "&destinations" together with the lat and lng of the next location in the tour. We also set the mode to walking"&mode=walking" and pass in the key from GCT google maps API. (The key was also generated within the google maps API settings for the GCT login credentials).
+		As we loop through current location and next location to set the markers on the map, we also add more Google API, at first point add "\&origins" and the lat and lng of current location. At second point we add "\&destinations" together with the lat and lng of the next location in the tour. We also set the mode to walking"\&mode=walking" and pass in the key from GCT google maps API. (The key was also generated within the google maps API settings for the GCT login credentials).
 		
 \begin{minted}{js}
 	for(var i = $scope.currLocation; i <= $scope.nextLocation; i++) {
@@ -258,7 +258,8 @@ As many pages as needed.
 		\includegraphics{img/architecture.PNG}
 	\end{center}
 		\subsection{Presentation Layer}
-		 In presentation layer you can see the Admin Site (Admin portal) ,this is a graphical user interface where system admin can manage the contents and accounts of the users registered.  On the right hand side, you can see many mobile devices of different platform consuming the data from API. Consuming app is only allowed to send GET request to API because all we care in end user app is being able to retrieve the data dynamically loaded from the api. On the admin portal, any CRUD operations needed to perform requires authorization and authentication of registered admin. The user interface in presentation layer was developed in angularjs and Ionic framework. The main components of presentation layer are as follows : In this layer will will discuss about the admin portal user interface and end user mobile apps user interface. 
+		 In presentation layer you can see the Admin Site (Admin portal) ,this is a graphical user interface where system admin can manage the contents and accounts of the users registered.  On the right hand side, you can see many mobile devices of different platform consuming the data from API. Consuming app is only allowed to send GET request to API because all we care in end user app is being able to retrieve the data dynamically loaded from the api. On the admin portal, any CRUD operations needed to perform requires authorization and authentication of registered admin. The user interface in presentation layer was developed in angularjs and Ionic framework. The main components of presentation layer are as follows : In this layer will will discuss about the admin portal user interface and end user mobile apps user interface.
+		 \subsection{Admin Panel} 
 		
 		 	\begin {center}    
 		 		\includegraphics{img/gctloginpage.PNG}
@@ -281,16 +282,33 @@ As many pages as needed.
 		 			\end{center}
 		 		
 		 			This is one of the powerful feature of this project. This is a user management section.  Remember, there are two types of admin roles in this project. Super admin and Regular admin. If you are logged in as a superuser then you will have access to user management, system user registration pages.
-		 			
+		 \subsection{Ionic Application}
 		 			\begin{center}    
-		 				\includegraphics{img/ionicmanepage.PNG}
+		 				\includegraphics{img/LandingPage.png}
 		 			\end{center}
-		 			This is the landing page of the mobile application. The application is very clean and attractive. It shows the weather and on the bottom it have different tabs for navigation purpose. 
+		 			This is the landing page of the mobile application. The application is very clean and attractive. It shows the weather and the tabs navigation bar. 
 		 			
 		 				\begin{center}    
-		 					\includegraphics{img/toursandlocations.PNG}
+		 					\includegraphics{img/TourInfoTab.png}
 		 				\end{center}
-		 				When user clicks on the tours, they will be brought to the page on the left. End user can see all the tours available. When they click on a tour, they will be brought to the location page where it displays all the location or walks in that tour. 
+		 				When user clicks on the tours, they will be brought to the page on the left. End user can see all the tours available. When they click on a tour, they will be brought to the location page where it displays all the location or walks in that tour.
+		 				
+		 				\begin{center}    
+		 					\includegraphics{img/TourDetailTab.png}
+		 				\end{center}
+		 				When user clicks on a tour location to the left, the page on the right  will open. This page displays the details of that tour location.		 	
+		 				\begin{center}    
+		 					\includegraphics{img/TakeTourTab.png}
+		 				\end{center}
+		 				When  the user clicks on the take tour button on the previous page, the page above will open. This page displays on the map to the left, the start location of the current selected tour and the next point in the tour. To the right is the information about the current location. This page is dynamic.
+		 				\begin{center}    
+		 					 \includegraphics{img/MyTourTab.png}
+		 				\end{center}
+		 				If the user has downloaded a tour from the locations page, when they click the My Saved Tour tab the page above will open. This page provides the tour location on the map to the left and the information about each location to the right which is saved locally(static data).
+		 				\begin{center}    
+		 					\includegraphics{img/MapTab.png}
+		 				\end{center}
+		 				When user clicks on the map tab it open a map that displays there current location. 
 		\subsection{Business Logic }
 		We have talked about the presentation layer of this application . Now let's talk about the business logic layer and how everything is connected.  The business logic has been written in javascript. Every functionality has its own controller.  When consumer app send the GET request to an API endpoint, appropriate controller is called to complete the request. The thing to remember here is, external user / external request is not directly connected to our database. The controller is used to retrieve the information from the database and response is sent back to the browser. There is no direct connection to the database therefore any request coming is handled by an API and controllers working together.  Please refer to the architecture diagram above for better understanding of this process. 
 		API route and appropriate controller is invoked to complete the request. 
@@ -600,3 +618,8 @@ First limitation was : Goggle Map API (Numbering system). When you would like to
 
 
 \chapter{GitHub Links}
+\begin{itemize}
+	\item{(Back-End)https://github.com/ultimatecodelab/Galway-Civic-Trust.git}
+	\item{(Ionic Mobile Application)https://github.com/TrevorDavies/Galway-Civic-Trust.git}
+	\item{(Documentation)https://github.com/Paddero/GCT-Documentation.git}
+\end{itemize}
