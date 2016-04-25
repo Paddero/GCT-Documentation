@@ -192,31 +192,39 @@ We used Agile software development methodology for this project because of the p
 		
 		We set the start of the google API so we can add the tour points dynamically.\\
 \begin{minted}{js}
-	var distanceUrl = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=metric';
+var distanceUrl ='https://maps.googleapis.com/maps/api/distancematrix/json?
+units=metric';
 \end{minted}
 
 		As we loop through current location and next location to set the markers on the map, we also add more Google API, at first point add "\&origins" and the lat and lng of current location. At second point we add "\&destinations" together with the lat and lng of the next location in the tour. We also set the mode to walking"\&mode=walking" and pass in the key from GCT google maps API. (The key was also generated within the google maps API settings for the GCT login credentials).
 		
 \begin{minted}{js}
-	for(var i = $scope.currLocation; i <= $scope.nextLocation; i++) {
-		if(i < $scope.nextLocation)
-		{
-			distanceUrl += '&origins=' + $scope.locationDataToTake[i].xCoordinate + ',' + $scope.locationDataToTake[i].yCoordinate;
-			marker = new google.maps.Marker({
-				position: new google.maps.LatLng($scope.locationDataToTake[i].xCoordinate,$scope.locationDataToTake[i].yCoordinate),
-				label: (i+1).toString()
-			})
-			marker.setMap($scope.tourMap);
-		}
-		else {
-			distanceUrl += '&destinations=' + $scope.locationDataToTake[i].xCoordinate + ',' + $scope.locationDataToTake[i].yCoordinate + '&mode=walking&key=AIzaSyCBYil1DfXoRTgEcqB0-wL99XVTKqEkVio';
-			marker = new google.maps.Marker({
-				position: new google.maps.LatLng($scope.locationDataToTake[i].xCoordinate,$scope.locationDataToTake[i].yCoordinate),
-				label: (i+1).toString()
-			})
-			marker.setMap($scope.tourMap);
-		}
-	}
+for(var i = $scope.currLocation; i <= $scope.nextLocation; i++) {
+if(i < $scope.nextLocation)
+{
+distanceUrl += '&origins=' + $scope.locationDataToTake[i].xCoordinate + ','
++$scope.locationDataToTake[i].yCoordinate;
+marker = new google.maps.Marker({
+position: new google.maps.LatLng($scope.locationDataToTake[i].xCoordinate,
+$scope.locationDataToTake[i].yCoordinate),
+label: (i+1).toString()
+})
+marker.setMap($scope.tourMap);
+}
+else {
+distanceUrl += '&destinations=' + 
+$scope.locationDataToTake[i].xCoordinate +','
++ $scope.locationDataToTake[i].yCoordinate
++'&mode=walking
+&key=AIzaSyCBYil1DfXoRTgEcqB0-wL99XVTKqEkVio';
+marker = new google.maps.Marker({
+position: new google.maps.LatLng($scope.locationDataToTake[i].xCoordinate,
+$scope.locationDataToTake[i].yCoordinate),
+label: (i+1).toString()
+})
+marker.setMap($scope.tourMap);
+}
+}
 \end{minted}
 		
 		\subsection{Offline Map/Tab}
@@ -226,22 +234,32 @@ We used Agile software development methodology for this project because of the p
 		
 		Google static map API was used for the offline tour, this API came in very handy as by passing into the API what we wanted, we receive an image of the static google map view with markers of the colour we wanted, labels, and a polyline between the points we wanted. We then saved this image together with the rest of the images. Just like the dynamic map distance matrix API, we needed to build the right URL for the google static map API on the go. We created a separate URLs, one for the points and the other for the markers and combined them into one at a later stage of the code. As shown below,
 \begin{minted}{js}
-		var mapURL = 'https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCBYil1DfXoRTgEcqB0-wL99XVTKqEkVio&size=300x300&format=JPEG&maptype=roadmap&path=color:0x0000ff80|weight:1';
-		var markers = '&markers=';
+var mapURL = 'https://maps.googleapis.com/maps/api/staticmap?
+key=AIzaSyCBYil1DfXoRTgEcqB0-wL99XVTKqEkVio&size=300x300
+&format=JPEG&maptype=roadmap&
+path=color:0x0000ff80|weight:1';
+var markers = '&markers=';
 \end{minted}
 		
 		As we loop through the tour, we add each point to the mapURL (which will show each location of the tour) and to markers we specify what color and label it should have. The first point will be a green marker with label ‘S’ to show the user where the starting point is. 
 		
 \begin{minted}{js}
-		for(var i = 0; i < tourData.length; i++) {
+for(var i = 0; i < tourData.length; i++) {
 			
-			mapURL += '|' + tourData[i].xCoordinate + ',' + tourData[i].yCoordinate;
-			markers += i == 0 ? 'color:green|label:S|' + tourData[i].xCoordinate + ',' + tourData[i].yCoordinate : '&markers=size:mid|color:red|label:'+(i+1)+'|' + tourData[i].xCoordinate + ',' + tourData[i].yCoordinate;
-		}
-		mapURL += markers;
+mapURL += '|' + tourData[i].xCoordinate + ','
++ tourData[i].yCoordinate;
+markers += i == 0 ? 'color:green|label:S|' 
++ tourData[i].xCoordinate + ','
++ tourData[i].yCoordinate : 
+'&markers=size:mid|color:red|label:'+(i+1)+'|' 
++ tourData[i].xCoordinate + ','
++ tourData[i].yCoordinate;
+}
+mapURL += markers;
 		
-		Once the mapURL is combined with markers, we pass it to the MapDownload function as shown below,
-		$scope.MapDownload(mapURL);
+Once the mapURL is combined with markers, we pass it to the 
+MapDownload function as shown below,
+$scope.MapDownload(mapURL);
 \end{minted}
 		
 
@@ -605,6 +623,7 @@ Controller to receive all the locations of a specific tour and sorting by timest
 It has been very interesting and rewarding to have done this project for the Galway Civic Trust. We have all learned about a small part of the organisation, the Walking tours the trust provides to all tourists who visit Galway City, and a good bit about history of the City itself.   
 During the develop of this project we have all learned about some new technologies and re-enforced knowledge of one or two of these technologies.
 The objectives and goals set out in the problem statement have been solved and achieved. These were to develop a system by which The Galway Civic Trust could accomplish the creation of new Walking Tours and maintain them without the need of a new Mobile Application having to be made every time they have a new tour.
+The information held within the database is dynamically distributed to the Mobile Application. End users then have the option to save the data received to local storage, so that it can be accessed when they do not have an internet connection. All of the tour locations are displayed on a map dynamically and because of the local storage these tour locations can also be displayed on a static map. The system that's been created has many features which all make using both the Web Application and the Mobile Application easy to use. The back-end database is well protected from potential attacks, this has been achieved by using jwt.  
 The Galway Civic Trust now has at its disposal a system that can dynamically maintain and create new Walking Tours. By using the RESTful API any changes in the tour information can be instantaneously delivered to any number of devices using the API. The system is safe from any external injection/attacks we have have tested in various different platforms.  
 The completion of the tasks has been achieved by applying the principles and methods we have been taught through the year in software development.  
 
