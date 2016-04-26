@@ -5,13 +5,10 @@
 This project has been done in conjunction with the Galway Civic Trust. The purpose of the project was to solve the problem the Galway Civic Trust had. The main problem they had was that they had no facility by which the trust could create, read, update and delete walking tours with out the need to have a separate mobile application developed for each tour. 
 The system comprises of two main parts a back end web application(Admin Panel) which its self consists of two parts an administration site and an API(Application Programming Interface). The API is protected using jwt and is safe from external injection/attacks. The Admin Panel which is what the trust will use to manage the walking tour's content, has been developed using a MEAN(MongoDB, Express, Angular JS, Node JS) stack approach. The API is used by both the Admin panel and the mobile application to communicate with the database. The second part of the project was to develop a cross platform mobile application that consumes the data from the database, which is provided by the API. The mobile application makes extensive use of Google's Map API for both dynamic and static maps used within the mobile application. The mobile application was developed using the Ionic Framework and Angular JS. 
 
-
-A brief description of what the project is, in about two-hundred and fifty words.
-
 \paragraph{Authors}
 This project has been developed by 3 fourth year students: Arjun Kharel, Trevor Davies and Patryk Piecha for the Bachelors of Science Honours Degree in Software Development.
-Arjun was responsible for the development of  back-end(Admin Portal) web application.
-Patryk and Trevor, Arjun were responsible for the mobile application and every one of us contributed in the documentation. 
+Arjun was responsible for the development of the back-end(Admin Portal) web application and also the API for mobile devices to consume the data from.
+Patryk, Trevor, Arjun were responsible for the mobile application and every one of us contributed in the documentation. 
 
 \chapter{Background}
  \cite{galwayTourism} Galway City originally formed from a small fishing village located in the area near the Spanish Arch called ‘The Claddagh’ where the River Corrib meets Galway Bay. Galway later became a walled town in the year 1232 after the territory was captured by the Anglo Normans lead by Richard De Burgo. The town walls, some sections of which can be seen today near the Spanish Arch, were constructed circa 1270. A charter was granted in 1396 by Richard II which transferred governing powers to 14 merchant families, known locally as the 14 tribes of Galway. 
@@ -64,18 +61,20 @@ In partnership with the Department of Social Protection, Galway City Council and
 	\end{itemize}
 	\section {Roadmap}
 	So, at this point, we have discussed about what the project is, and the reason for taking this project. Now, let me explain few sections/chapters of this review briefly so you will have a better understanding of a project.
-	Methodology  - This section provides the development methodologies we used to develop this project, including project meetings, collaboration tools used, interaction with the client and weekly meeting with the project supervisor. 
-	Technology review : This section provides the research that was carried out when choosing the technology . This section also provides the selection criteria and the particular reason for choosing the specific technology.
-	System Design : This section gives detailed information about actual system, and the way it is functioning. This section also talks about the architecture of a project, Data models, use cases etc.  
-	System Evaluation : This section provides evaluates the system based on the following attributes.
-	Scalability
-	Robustness
-	Maintainability
-	Extensibility 
-	Reliability 
+	\textbf{Methodology}  - This section provides the development methodologies we used to develop this project, including project meetings, collaboration tools used, interaction with the client and weekly meeting with the project supervisor. 
+	\textbf{Technology review }: This section provides the research that was carried out when choosing the technology . This section also provides the selection criteria and the particular reason for choosing the specific technology.
+	\textbf{System Design, Implementation and Deployment} : This section gives detailed information about actual system, and the way it is functioning. This section also talks about the architecture of a project, Data models, use cases etc.   
+	\textbf{System Evaluation :} This section provides evaluates the system based on the following attributes.
+	\begin{itemize}
+	\item Scalability
+	\item Robustness
+	\item Maintainability
+	\item Extensibility 
+	\end{itemize}
+	and also talks about the limitations of certain technologies. 
 	
-	Conclusion and Recommendation: This section summarises the context of a project, objectives and goal achieved. 
-	We have talked about different sections of this project briefly and now I would like  to include the resources url of this project.  Due to the nature of this project, we have created three different repositories in Github as because they were developed independently of one another and at the end they are talking using the middleware technologies and different protocols. This is explained in detail in the technology review section.  Following are the repositories in the github.
+	\textbf{Conclusion}: This section summarises the context of a project, objectives and goal achieved. 
+	We have talked about different sections of this project briefly and now I would like  to include the resources url of this project.  Due to the nature of this project, we have created three different repositories in Github as because they were developed independently of one another and at the end they are talking using the middleware technologies and different protocols. This is explained in detail in the technology review section.
 	
 
 \chapter{Methodology}
@@ -90,8 +89,6 @@ A cross platform mobile development framework for the mobile application was dec
 \end{itemize}
 
 We used Agile software development methodology for this project because of the projects nature. The requirement was not clearly specified to us and therefore, we had to develop the system in an incremental way. We had a weekly project meeting with our project supervisor Damien Costello. Mr. Damien Costello helped to guiding us throughout the entire development of this project. Every week/fortnight  our work was presented to our project supervisor and feedback was received.  As the development group consisted of three members, we had two-three meetings per week to discuss how we were getting on with  the project. We also created the facebook group chat for interaction outside the college. 
-
-
 
 
 \chapter{Technology Review}
@@ -132,10 +129,10 @@ We used Agile software development methodology for this project because of the p
 		So, we spoke about the main components of MEAN stack briefly and  now you should have better understanding  of this technology.  Lets us now talk about the RESTful api that as been developed for the consumption of our data by the mobile device(end user).
 		
 		\section{REST- Architecture}
-		\cite{expressRefWiki}\cite{restProgramming} Representation State Transfer, widely knows as the REST or RESTful model for web-services, uses the native HTTP operation: POST,GET,PUT, and DELETE to map on to the four fundamental database operations. - Create,READ,UPDATE,DELETE. API can be built to link these four HTTP verbs to functions which Create, Read, Delete or Update records within a web-services. This service can be consumed by any time of authenticated client device. 
+		\cite{expressRefWiki}\cite{restProgramming} Representation State Transfer, widely knows as the REST or RESTful model for web-services, uses the native HTTP operation: POST,GET,PUT, and DELETE to map on to the four fundamental database operations. - CREATE,READ,UPDATE,DELETE. API can be built to link these four HTTP verbs to functions which Create, Read, Delete or Update records within a web-services. This service can be consumed by any time of authenticated client device. 
 		
 		\section{Passport JWT - JSON Web Tokens Authentication}
-		The backend(admin portal) and the API is fully protected using JSON web tokens. System user Login and API endpoints has been all protected from external injection.  \cite{AnatomyOfJWT} \cite{IETFRFC} \cite{DraftIETAOAUTH} [19,20,21] JSON web tokens are open, industry standard RFC 7519 method for representing claims securely between two parties.  Token based authentication is prominent everywhere on the web nowadays. With most every web company using an API, tokens are the best way to handle authentication for multiple user. JWT is separated into three parts, Header, Payload,  Signature.
+		The backend(admin portal) and the API is fully protected using JSON web tokens. System user Login and API endpoints has been all protected from external injection.  \cite{AnatomyOfJWT} \cite{IETFRFC} \cite{DraftIETAOAUTH}. JSON web tokens are open, industry standard RFC 7519 method for representing claims securely between two parties.  Token based authentication is prominent everywhere on the web nowadays. With most every web company using an API, tokens are the best way to handle authentication for multiple user. JWT is separated into three parts, Header, Payload,  Signature.
 		
 		 Header: The header contains two parts - declaring the type, which is jwt and the hashing algorithm to use (HMAC SHA256 )
 		 {
@@ -266,7 +263,6 @@ $scope.MapDownload(mapURL);
 
 
 \chapter{System Design, Implementation and Deployment}
-As many pages as needed.
 	\section {System prototype}
 	Prototyping tools used : Reasonable amount of time was spent initially in the design phase of this application . We have designed our both backend (Admin portal ) and Ionic mobile app using , one of the most popular prototyping software called JustInMind Prototyper. 
 	
@@ -328,7 +324,7 @@ As many pages as needed.
 		 				\end{center}
 		 				When user clicks on the map tab it open a map that displays there current location. 
 		\subsection{Business Logic }
-		We have talked about the presentation layer of this application . Now let's talk about the business logic layer and how everything is connected.  The business logic has been written in javascript. Every functionality has its own controller.  When consumer app send the GET request to an API endpoint, appropriate controller is called to complete the request. The thing to remember here is, external user / external request is not directly connected to our database. The controller is used to retrieve the information from the database and response is sent back to the browser. There is no direct connection to the database therefore any request coming is handled by an API and controllers working together.  Please refer to the architecture diagram above for better understanding of this process. 
+		We have talked about the presentation layer of this application . Now let's talk about the business logic layer and how everything is connected.  The business logic has been written in javascript. Every functionality has its own controller.  When consumer app sends the GET request to an API endpoint, appropriate controller is called to complete the request. The thing to remember here is, external user / external request is not directly connected to our database. The controller is used to retrieve the information from the database and response is sent back. There is no direct connection to the database therefore any request coming is handled by an API and controllers working together.  Please refer to the architecture diagram above for better understanding of this process. 
 		API route and appropriate controller is invoked to complete the request. 
 		
 		How tour is uploaded in the database ?
@@ -404,7 +400,7 @@ As many pages as needed.
 	 });
  };
 	   \end{minted}
- POST and PUT routes protected
+\textbf{Protected endpoints}
  
  \begin{minted}{js}
  router.post('/upload', auth.isAuthenticated(), controller.upload);
@@ -413,7 +409,7 @@ As many pages as needed.
  router.post('/uploadLocation', auth.isAuthenticated()
  \end{minted}
 	
-Controller to receive all the locations of a specific tour and sorting by timestamp to determine the order of the tour inserted
+Controller to receive all the locations of a specific tour and sorting by timestamp to determine the order of the tour inserted.
 
 \begin{minted}{js}
 	exports.getAllPublishedTours = function(req, res) {
@@ -524,7 +520,9 @@ Controller to receive all the locations of a specific tour and sorting by timest
 	please follow this link here, official digital ocean instructions for deploying a nodejs app for production.
 	
 	https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
-
+	
+	\textbf{The backend(Admin portal) of this system is deployed in digital ocean and can be reached from this link : http://galwaytour.tk/}
+	
 
 \chapter{System Evaluation}
 
@@ -621,20 +619,20 @@ It has been very interesting and rewarding to have done this project for the Gal
 During the develop of this project we have all learned about some new technologies and re-enforced knowledge of one or two of these technologies.
 The objectives and goals set out in the problem statement have been solved and achieved. These were to develop a system by which The Galway Civic Trust could accomplish the creation of new Walking Tours and maintain them without the need of a new Mobile Application having to be made every time they have a new tour.
 
-Full content management (Admin portal) for Galway Civic Trust has been developed and is already hosted on Digital Ocean. Admin Portal provides Galway Civic Trust system admin to perform all the CRUD operations regarding the tours/locations. We have integrated different roles for system admin. Super(root) admin and regular admin. Super admin have privileges to manage other regular system admins, and this was achieved by having a 'Role' field in the database. If system admin forgot their login password, it can be recovered. The password reset link will be sent to his/her email within split seconds and they can go through the process of resetting the password. 
-We make sure the API and backend(Admin portal) is fully secured from any external injections or attacks. The API comprises of more than 20 endpoints/routes to perform various types of requests and all the endpoints are fully protected using JTW- JSON web tokens authentication. 
+\textbf{Full content management (Admin portal)} for Galway Civic Trust has been developed and is already hosted on Digital Ocean. Admin Portal provides Galway Civic Trust system admin to perform all the CRUD operations regarding the tours/locations. We have integrated different roles for system admin. Super(root) admin and regular admin. Super admin have privileges to manage other regular system admins, and this was achieved by having a 'Role' field in the database. If system admin forgot their login password, it can be recovered. The password reset link will be sent to his/her email within split seconds and they can go through the process of resetting the password. 
+We made sure the API and backend(Admin portal) is fully secured from any external injections or attacks. The API comprises of more than 20 endpoints/routes to perform various types of requests and all the endpoints are fully protected using JWT- JSON web tokens authentication. 
 
 
-The mobile application has been developed consumption of the tours from an API. Any changes in the datasets is instantly reflected in the consuming mobile devices and synchronisation is very fast and effective. Mobile app provides a complete navigations/directions of a tour and its locations. We have integrated with google maps API to provide navigation service. The maps also displays the approximate distance and time to complete a tour and is dynamically changed when use move to different location. Mobile application is making extensive use of google maps API for efficient navigations. 
+\textbf{The mobile application} has been developed for the consumption of the tours data from an API. Any changes in the datasets is instantly reflected in the consuming mobile devices and synchronisation is very fast and effective. Mobile app provides a complete navigations/directions of a tour. We have integrated with google maps API to provide navigation service. The maps also displays the approximate distance and time to complete a tour and is dynamically changed when use move to different location. Mobile application is making extensive use of google maps API for efficient and reliable navigations. 
 In order to increase the productivity of a mobile application, we have integrated the offline system. End user can download the tour they would like to make available offline and it is stored in local storage so that it can be accessed when they do not have an internet connection. 
  
 The Galway Civic Trust now has at its disposal a system that can dynamically maintain and create new Walking Tours. By using the RESTful API any changes in the tour information can be instantaneously delivered to any number of devices consuming the data from API. The system is safe from any external injection/attacks we have have tested in various different platforms.  
 The completion of the tasks has been achieved by applying the principles and methods we have been taught through the year in software development.  
 
 
-\chapter{GitHub Links}
+\chapter{Appendices}
 \begin{itemize}
-	\item{(Back-End)https://github.com/ultimatecodelab/Galway-Civic-Trust.git}
-	\item{(Ionic Mobile Application)https://github.com/TrevorDavies/Galway-Civic-Trust.git}
-	\item{(Documentation)https://github.com/Paddero/GCT-Documentation.git}
+	\item{\textbf{Admin Portal - Backend:  }https://github.com/ultimatecodelab/Galway-Civic-Trust.git}
+	\item{\textbf{Ionic Mobile Application: }https://github.com/TrevorDavies/Galway-Civic-Trust.git}
+	\item{\textbf{Documentation: }https://github.com/Paddero/GCT-Documentation.git}
 \end{itemize}

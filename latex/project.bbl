@@ -1,82 +1,96 @@
 \begin{thebibliography}{10}
 
 \bibitem{galwayTourism}
-``Galway tourism.''
+``Galway tourism.'' \url{http://www.galwaytourism.ie/}.
 
 \bibitem{galway20}
-``Galway2020.''
+``Galway2020.'' \url{http://galway2020.ie/en/}.
 
 \bibitem{failteireland}
 ``failteireland.''
 
 \bibitem{galwaycivictrust}
-``Galway civic trust.''
+``Galway civic trust.'' \url{http://www.galwaycivictrust.ie/}.
 
 \bibitem{JustInMind}
-``Just in mind prototyper.''
+``Just in mind prototyper.'' \url{http://www.justinmind.com/}.
 
 \bibitem{Mean-Stack}
-``Mean - stack.''
+``Mean - stack.'' \url{http://mean.io/}.
 
 \bibitem{NoSqlTechnology}
-``Nosql technology.''
+``Nosql technology.'' \url{https://en.wikipedia.org/wiki/NoSQL}.
 
 \bibitem{MongoOfficial}
 ``Mongodb - manual.''
+  \url{https://docs.mongodb.org/master/MongoDB-manual-master.pdf}.
 
 \bibitem{VeronikaAbramova}
 ``Open journal of databases (ojdb) volume 1, issue 2, 2014 which nosql
   database.''
+  \url{https://www.ronpub.com/publications/OJDB-v1i2n02_Abramova.pdf}.
 
 \bibitem{EricRedmond}
-``Eric redmond jim r. wilson (2012); seven databases in seven weeks.''
+``Eric redmond jim r. wilson (2012); seven databases in seven weeks.'' \url{
+  http://media.pragprog.com/titles/rwdata/intro.pdf}.
 
 \bibitem{MongoDbArchitectureGuide}
 ``Mongodb architecture guide..''
+  \url{http://info.mongodb.com/rs/mongodb/images/MongoDB_Architectur
+  e_Guide.pdf}.
 
 \bibitem{expressRef}
 ``Andrew john poulter, steven j.jonston, simon j.coxt.''
+  \url{http://0-ieeexplore.ieee.org.library.gmit.ie/stamp/stamp.jsp?tp=&arnumber=7389066}.
 
 \bibitem{expressRefWiki}
-``Express.js wiki.''
+``Express.js wiki.'' \url{https://en.wikipedia.org/wiki/Express.js}.
 
 \bibitem{Node.jsWiki}
-``Nodejs wiki.''
+``Nodejs wiki.'' \url{https://nodejs.org/en/}.
 
 \bibitem{Angularjs}
 ``Angularjs - official website - introduction section.''
+  \url{https://docs.angularjs.org/guide/introduction}.
 
 \bibitem{YeomanGenerator}
-``Yeoman generator.''
+``Yeoman generator.'' \url{http://yeoman.io/generators/}.
 
 \bibitem{AngularJSDi}
 ``Angularjs dependency injection - official website.''
+  \url{https://docs.angularjs.org/guide/di}.
 
 \bibitem{restProgramming}
 ``Restful programming.''
+  \url{http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming}.
 
 \bibitem{AnatomyOfJWT}
 ``The anatomy of a json web token.''
+  \url{https://scotch.io/tutorials/the-anatomy-of-a-json-web-token}.
 
 \bibitem{IETFRFC}
 ``Internet engineering task force rfc 7519.''
+  \url{https://tools.ietf.org/html/rfc7519}.
 
 \bibitem{DraftIETAOAUTH}
 ``Draft ieta oauth json web token.''
+  \url{https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32/}.
 
 \bibitem{StormpathJWT}
-``Jwt - the right way.''
+``Jwt - the right way.'' \url{https://stormpath.com/blog/jwt-the-right-way/}.
 
 \bibitem{HyphemeJWT}
 ``Token based authencation - nodejs.''
+  \url{https://blog.hyphe.me/token-based-authentication-with-node/}.
 
 \bibitem{JWTPassport}
-``Passport - jwt strategy.''
+``Passport - jwt strategy.'' \url{https://www.npmjs.com/package/passport-jwt/}.
 
 \bibitem{sendGrid}
-``Send grid - email service.''
+``Send grid - email service.'' \url{https://sendgrid.com/}.
 
 \bibitem{GoogleMapDirection}
 ``Direction service - google maps.''
+  \url{https://developers.google.com/maps/documentation/javascript/directions/}.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  25 APR 2016 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.7)  26 APR 2016 00:53
 entering extended mode
 **./project.tex
 (project.tex
@@ -1553,20 +1553,20 @@ Chapter 1.
 File: img/statsgalway.PNG Graphic file (type png)
 
 <use img/statsgalway.PNG>
-Package pdftex.def Info: img/statsgalway.PNG used on input line 23.
+Package pdftex.def Info: img/statsgalway.PNG used on input line 20.
 (pdftex.def)             Requested size: 343.28165pt x 266.49496pt.
  <img/revenue.PNG, id=247, 341.02406pt x 271.0125pt>
 File: img/revenue.PNG Graphic file (type png)
 
 <use img/revenue.PNG>
-Package pdftex.def Info: img/revenue.PNG used on input line 26.
+Package pdftex.def Info: img/revenue.PNG used on input line 23.
 (pdftex.def)             Requested size: 341.02322pt x 271.01183pt.
  [6 <./img/statsgalway.PNG>] [7 <./img/revenue.PNG>]
 Chapter 2.
 [8
 
 ] [9]
-Overfull \hbox (6.9029pt too wide) in paragraph at lines 57--58
+Overfull \hbox (6.9029pt too wide) in paragraph at lines 54--55
 []\OT1/lmr/m/n/12 Objective and Goals: Our ob-jec-tives and goals stems from pr
 ojects/systems
  []
@@ -1574,13 +1574,13 @@ ojects/systems
 [10] [11]
 Chapter 3.
 
-Overfull \hbox (8.40207pt too wide) in paragraph at lines 87--88
+Overfull \hbox (8.40207pt too wide) in paragraph at lines 86--87
 []\OT1/lmr/m/n/12 (Back-End)https://github.com/ultimatecodelab/Galway-Civic-Tru
 st.git 
  []
 
 
-Overfull \hbox (5.8874pt too wide) in paragraph at lines 89--90
+Overfull \hbox (5.8874pt too wide) in paragraph at lines 88--89
 []\OT1/lmr/m/n/12 (Documentation)https://github.com/Paddero/GCT-Documentation.g
 it 
  []
@@ -1592,19 +1592,19 @@ Chapter 4.
 [14
 
 ]
-Overfull \hbox (2.18016pt too wide) in paragraph at lines 110--111
+Overfull \hbox (2.18016pt too wide) in paragraph at lines 107--108
 []\OT1/lmr/m/n/12 MongoDB : This is a doc-u-ment store, non-relational, open-so
 urce database
  []
 
 [15]
-Overfull \hbox (5.7705pt too wide) in paragraph at lines 121--122
+Overfull \hbox (5.7705pt too wide) in paragraph at lines 118--119
 \OT1/lmr/m/n/12 Node.js uses an event driven, non-blocking I/O model that makes
  it lightweight
  []
 
 [16]
-Overfull \hbox (7.47205pt too wide) in paragraph at lines 135--136
+Overfull \hbox (7.47205pt too wide) in paragraph at lines 132--133
 \OT1/lmr/m/n/12 ful model for web-services, uses the na-tive HTTP op-er-a-tion:
  POST,GET,PUT,
  []
@@ -1631,7 +1631,7 @@ File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (_minted-project/9A0D530CF8E74A1DEFE85C60B8C9473CD366870B77571C9CE8F8C6C0342FFE
 6A.pygtex
-Underfull \hbox (badness 10000) in paragraph at lines 193--1
+Underfull \hbox (badness 10000) in paragraph at lines 190--1
 
  []
 
@@ -1656,10 +1656,10 @@ Chapter 5.
 File: img/architecture.PNG Graphic file (type png)
 
 <use img/architecture.PNG>
-Package pdftex.def Info: img/architecture.PNG used on input line 276.
+Package pdftex.def Info: img/architecture.PNG used on input line 272.
 (pdftex.def)             Requested size: 452.43921pt x 323.70859pt.
 
-Overfull \hbox (62.43921pt too wide) in paragraph at lines 276--277
+Overfull \hbox (62.43921pt too wide) in paragraph at lines 272--273
  [] 
  []
 
@@ -1669,7 +1669,7 @@ Overfull \hbox (62.43921pt too wide) in paragraph at lines 276--277
 File: img/gctloginpage.PNG Graphic file (type png)
 
 <use img/gctloginpage.PNG>
-Package pdftex.def Info: img/gctloginpage.PNG used on input line 283.
+Package pdftex.def Info: img/gctloginpage.PNG used on input line 279.
 (pdftex.def)             Requested size: 341.77603pt x 248.42752pt.
 
 Overfull \hbox (33.18456pt too wide) has occurred while \output is active
@@ -1681,10 +1681,10 @@ lmr/m/n/12 24
 <img/MainPage.PNG, id=395, 532.99126pt x 240.9pt>
 File: img/MainPage.PNG Graphic file (type png)
  <use img/MainPage.PNG>
-Package pdftex.def Info: img/MainPage.PNG used on input line 288.
+Package pdftex.def Info: img/MainPage.PNG used on input line 284.
 (pdftex.def)             Requested size: 532.98996pt x 240.8994pt.
 
-Overfull \hbox (142.98996pt too wide) in paragraph at lines 288--289
+Overfull \hbox (142.98996pt too wide) in paragraph at lines 284--285
  [] 
  []
 
@@ -1699,10 +1699,10 @@ lmr/m/n/12 25
 File: img/locationPage.PNG Graphic file (type png)
 
 <use img/locationPage.PNG>
-Package pdftex.def Info: img/locationPage.PNG used on input line 294.
+Package pdftex.def Info: img/locationPage.PNG used on input line 290.
 (pdftex.def)             Requested size: 499.11345pt x 230.36005pt.
 
-Overfull \hbox (109.11345pt too wide) in paragraph at lines 294--295
+Overfull \hbox (109.11345pt too wide) in paragraph at lines 290--291
  [] 
  []
 
@@ -1717,10 +1717,10 @@ lmr/m/n/12 26
 File: img/userManagement.PNG Graphic file (type png)
 
 <use img/userManagement.PNG>
-Package pdftex.def Info: img/userManagement.PNG used on input line 299.
+Package pdftex.def Info: img/userManagement.PNG used on input line 295.
 (pdftex.def)             Requested size: 966.6089pt x 191.2139pt.
 
-Overfull \hbox (576.6089pt too wide) in paragraph at lines 299--300
+Overfull \hbox (576.6089pt too wide) in paragraph at lines 295--296
  [] 
  []
 
@@ -1728,10 +1728,10 @@ Overfull \hbox (576.6089pt too wide) in paragraph at lines 299--300
 File: img/LandingPage.png Graphic file (type png)
 
 <use img/LandingPage.png>
-Package pdftex.def Info: img/LandingPage.png used on input line 305.
+Package pdftex.def Info: img/LandingPage.png used on input line 301.
 (pdftex.def)             Requested size: 455.45045pt x 408.02338pt.
 
-Overfull \hbox (65.45045pt too wide) in paragraph at lines 305--306
+Overfull \hbox (65.45045pt too wide) in paragraph at lines 301--302
  [] 
  []
 
@@ -1746,10 +1746,10 @@ lmr/m/n/12 27
 File: img/TourInfoTab.png Graphic file (type png)
 
 <use img/TourInfoTab.png>
-Package pdftex.def Info: img/TourInfoTab.png used on input line 310.
+Package pdftex.def Info: img/TourInfoTab.png used on input line 306.
 (pdftex.def)             Requested size: 451.68639pt x 405.01212pt.
 
-Overfull \hbox (61.68639pt too wide) in paragraph at lines 310--311
+Overfull \hbox (61.68639pt too wide) in paragraph at lines 306--307
  [] 
  []
 
@@ -1764,10 +1764,10 @@ lmr/m/n/12 28
 File: img/TourDetailTab.png Graphic file (type png)
 
 <use img/TourDetailTab.png>
-Package pdftex.def Info: img/TourDetailTab.png used on input line 315.
+Package pdftex.def Info: img/TourDetailTab.png used on input line 311.
 (pdftex.def)             Requested size: 453.19202pt x 405.01212pt.
 
-Overfull \hbox (63.19202pt too wide) in paragraph at lines 315--316
+Overfull \hbox (63.19202pt too wide) in paragraph at lines 311--312
  [] 
  []
 
@@ -1782,10 +1782,10 @@ lmr/m/n/12 29
 File: img/TakeTourTab.png Graphic file (type png)
 
 <use img/TakeTourTab.png>
-Package pdftex.def Info: img/TakeTourTab.png used on input line 319.
+Package pdftex.def Info: img/TakeTourTab.png used on input line 315.
 (pdftex.def)             Requested size: 451.68639pt x 405.76494pt.
 
-Overfull \hbox (61.68639pt too wide) in paragraph at lines 319--320
+Overfull \hbox (61.68639pt too wide) in paragraph at lines 315--316
  [] 
  []
 
@@ -1799,10 +1799,10 @@ lmr/m/n/12 30
 <img/MyTourTab.png, id=430, 461.47406pt x 408.02437pt>
 File: img/MyTourTab.png Graphic file (type png)
  <use img/MyTourTab.png>
-Package pdftex.def Info: img/MyTourTab.png used on input line 323.
+Package pdftex.def Info: img/MyTourTab.png used on input line 319.
 (pdftex.def)             Requested size: 461.47292pt x 408.02338pt.
 
-Overfull \hbox (71.47292pt too wide) in paragraph at lines 323--324
+Overfull \hbox (71.47292pt too wide) in paragraph at lines 319--320
  [] 
  []
 
@@ -1816,10 +1816,10 @@ lmr/m/n/12 31
 <img/MapTab.png, id=436, 454.69875pt x 405.01312pt>
 File: img/MapTab.png Graphic file (type png)
  <use img/MapTab.png>
-Package pdftex.def Info: img/MapTab.png used on input line 327.
+Package pdftex.def Info: img/MapTab.png used on input line 323.
 (pdftex.def)             Requested size: 454.69763pt x 405.01212pt.
 
-Overfull \hbox (64.69763pt too wide) in paragraph at lines 327--328
+Overfull \hbox (64.69763pt too wide) in paragraph at lines 323--324
  [] 
  []
 
@@ -1871,10 +1871,10 @@ lmr/m/n/12 35
 File: img/dataModels.PNG Graphic file (type png)
 
 <use img/dataModels.PNG>
-Package pdftex.def Info: img/dataModels.PNG used on input line 440.
+Package pdftex.def Info: img/dataModels.PNG used on input line 436.
 (pdftex.def)             Requested size: 484.81006pt x 298.86581pt.
 
-Overfull \hbox (94.81006pt too wide) in paragraph at lines 440--441
+Overfull \hbox (94.81006pt too wide) in paragraph at lines 436--437
  [] 
  []
 
@@ -1912,7 +1912,7 @@ lmr/m/n/12 38
  []
 
 [38]
-Overfull \hbox (13.9399pt too wide) in paragraph at lines 526--527
+Overfull \hbox (13.9399pt too wide) in paragraph at lines 522--523
 []\OT1/lmr/m/n/12 https://www.digitalocean.com/community/tutorials/how-to-set-u
 p-a-node-
  []
@@ -1939,22 +1939,82 @@ Chapter 7.
 ] [45]
 Chapter 8.
 
-Overfull \hbox (8.40207pt too wide) in paragraph at lines 637--638
-[]\OT1/lmr/m/n/12 (Back-End)https://github.com/ultimatecodelab/Galway-Civic-Tru
-st.git 
+Overfull \hbox (22.55556pt too wide) in paragraph at lines 635--636
+[]\OT1/lmr/bx/n/12 Admin Por-tal - Back-end: \OT1/lmr/m/n/12 https://github.com
+/ultimatecodelab/Galway-
  []
 
 
-Overfull \hbox (5.8874pt too wide) in paragraph at lines 639--640
-[]\OT1/lmr/m/n/12 (Documentation)https://github.com/Paddero/GCT-Documentation.g
-it 
+Overfull \hbox (12.65744pt too wide) in paragraph at lines 636--637
+[]\OT1/lmr/bx/n/12 Ionic Mo-bile Ap-pli-ca-tion: \OT1/lmr/m/n/12 https://github
+.com/TrevorDavies/Galway-
+ []
+
+
+Overfull \hbox (17.49669pt too wide) in paragraph at lines 637--638
+[]\OT1/lmr/bx/n/12 Documentation: \OT1/lmr/m/n/12 https://github.com/Paddero/GC
+T-Documentation.git 
  []
 
 ) (project.bbl [46
 
-] [47
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+[]\OT1/lmr/m/n/12 ``Mongodb - man-ual.'' []$\OT1/lmtt/m/n/12 https : / / docs .
+ mongodb . org / master /$
+ []
 
-])
+
+Underfull \hbox (badness 3780) in paragraph at lines 29--32
+\OT1/lmr/m/n/12 database.'' []$\OT1/lmtt/m/n/12 https : / / www . ronpub . com 
+/ publications / OJDB-[]v1i2n02 _$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+[]\OT1/lmr/m/n/12 ``Mongodb ar-chi-tec-ture guide..'' []$\OT1/lmtt/m/n/12 http 
+: / / info . mongodb . com / rs /$
+ []
+
+
+Underfull \hbox (badness 4899) in paragraph at lines 43--45
+[]\OT1/lmr/m/n/12 ``Andrew john poul-ter, steven j.jonston, si-mon j.coxt.'' []
+$\OT1/lmtt/m/n/12 http :$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+$\OT1/lmtt/m/n/12 / / 0-[]ieeexplore . ieee . org . library . gmit . ie / stamp
+ / stamp . jsp ?$
+ []
+
+[47
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+[]\OT1/lmr/m/n/12 ``Restful pro-gram-ming.'' []$\OT1/lmtt/m/n/12 http : / / sta
+ckoverflow . com / questions /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[]\OT1/lmr/m/n/12 ``Jwt - the right way.'' []$\OT1/lmtt/m/n/12 https : / / stor
+mpath . com / blog /$
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 83--85
+[]\OT1/lmr/m/n/12 ``Token based au-then-ca-tion - nodejs.'' []$\OT1/lmtt/m/n/12
+ https : / / blog . hyphe . me /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+[]\OT1/lmr/m/n/12 ``Passport - jwt strat-egy.'' []$\OT1/lmtt/m/n/12 https : / /
+ www . npmjs . com / package /$
+ []
+
+)
 runsystem(del "project.pyg")...executed.
 
  [48]
@@ -1964,12 +2024,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: B7653BE244E04E9962823A03D86CCB92;2316.
+(rerunfilecheck)             Checksum: 6E583D637633EDAA0DBDC1E6AF09D1B7;2314.
  ) 
 Here is how much of TeX's memory you used:
  24301 strings out of 493634
  493004 string characters out of 3134016
- 602586 words of memory out of 3000000
+ 602585 words of memory out of 3000000
  27004 multiletter control sequences out of 15000+200000
  49781 words of font info for 44 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -1986,9 +2046,9 @@ ms/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Users/KharelPC/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/KharelPC/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Users/KharelPC
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtti10.pfb>
-Output written on project.pdf (48 pages, 2277752 bytes).
+Output written on project.pdf (48 pages, 2288708 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
+ 608 PDF objects out of 1000 (max. 8388607)
  119 named destinations out of 1000 (max. 500000)
  472 words of extra memory for PDF output out of 10000 (max. 10000000)
 
